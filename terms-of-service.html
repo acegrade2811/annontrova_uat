@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service | Annotrova</title>
+<meta name="description" content="General terms for using the Annotrova website and engaging Annotrova for AI data operations services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#061329;--navy2:#0A1933;--blue:#087BFF;--cyan:#00C8F0;--ink:#101B32;--mute:#AAB6CA;--bg:#F6F9FE;--line:#DCE6F5}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.7}
+a{color:inherit;text-decoration:none}ul{list-style:none}:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+header{position:sticky;top:0;z-index:50;background:rgba(6,19,41,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(8,123,255,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:82px}
+.nav .logo img{height:50px;width:auto;display:block}
+.nav ul{display:flex;gap:40px}
+.nav ul a{color:#fff;font-weight:500;padding:10px 4px;border-bottom:3px solid transparent;transition:color .2s}
+.nav ul a:hover{color:var(--cyan)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:10px;font:600 16px Inter,sans-serif;border:2px solid transparent;transition:transform .2s,background .2s}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 8px 22px rgba(8,123,255,.3)}.btn-blue:hover{background:#0a6be0;transform:translateY(-2px)}
+.btn-line{border-color:var(--navy);color:var(--navy)}.btn-line:hover{background:var(--navy);color:#fff}
+.nav .btn{padding:11px 24px;border-radius:12px}
+.burger{display:none;background:none;border:0;color:#fff;font-size:30px;cursor:pointer}
+.phead{background:radial-gradient(ellipse at 80% 100%,#0b4a9f 0,var(--navy2) 50%,var(--navy) 100%);color:#fff;padding:64px 0 56px}
+.phead .back{display:inline-flex;align-items:center;gap:8px;color:var(--cyan);font-weight:600;margin-bottom:24px}
+.phead .back:hover{text-decoration:underline}
+.phead h1{font-size:clamp(34px,5vw,56px);line-height:1.1;font-weight:800;letter-spacing:-1.2px}
+.phead p{max-width:44em;margin-top:18px;font-size:clamp(16px,1.5vw,19px);color:#d6e0f0}
+.phead small{display:block;margin-top:14px;color:var(--mute)}
+.body{background:var(--bg);padding:56px 0 72px}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:48px;align-items:start}
+.toc{position:sticky;top:104px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;font-size:14px;max-height:calc(100vh - 130px);overflow:auto}
+.toc h2{font-size:15px;margin-bottom:10px}.toc li{margin-bottom:6px}.toc a{color:#3b4a66}.toc a:hover{color:var(--blue)}
+.doc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:44px;box-shadow:0 6px 18px rgba(16,27,50,.06);max-width:860px}
+.note{background:#EAF3FF;border-left:4px solid var(--blue);padding:14px 18px;border-radius:8px;margin-bottom:32px;font-size:15px}
+.doc section{margin-bottom:34px}
+.doc h2{font-size:24px;font-weight:700;letter-spacing:-.4px;margin-bottom:12px;line-height:1.3}
+.doc p{margin-bottom:12px;color:#26344f}
+.doc ul{list-style:disc;padding-left:22px;margin-bottom:12px;color:#26344f}.doc li{margin-bottom:6px}
+.doc a.l{color:var(--blue);font-weight:500}.doc a.l:hover{text-decoration:underline}
+.ph{background:#FFF4CC;padding:0 5px;border-radius:4px;font-weight:500}
+.bottom{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}
+footer{background:var(--navy);color:#fff}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1.3fr;gap:32px;padding:48px 0 36px}
+.fg .brand img{height:56px;margin-bottom:14px}.fg .brand p{color:var(--mute);max-width:16em}
+.fg h3{font-size:17px;margin-bottom:14px}.fg li{margin-bottom:9px;font-size:15px;color:var(--mute)}.fg a:hover{color:var(--cyan)}
+.fg .ct li{display:flex;gap:10px;align-items:center}.fg .ct svg{color:#fff;font-size:18px}
+.soc{display:flex;gap:12px;margin-top:18px}
+.soc a{width:38px;height:38px;border:1.5px solid rgba(255,255,255,.7);border-radius:8px;display:grid;place-items:center;font-size:19px;transition:background .2s}.soc a:hover{background:var(--blue);border-color:var(--blue)}
+.fb{border-top:1px solid rgba(170,182,202,.3);padding:20px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:14px;color:var(--mute)}
+.fb nav a{padding:0 12px}.fb nav a+a{border-left:1px solid var(--mute)}.fb nav a:last-child{padding-right:0}
+@media(max-width:1100px){.fg{grid-template-columns:1fr 1fr 1fr}.fg .brand{grid-column:1/-1}.nav ul{gap:22px}}
+@media(max-width:900px){.burger{display:block}
+.nav ul{position:absolute;top:82px;left:0;right:0;flex-direction:column;gap:0;background:var(--navy);padding:8px 32px 20px;display:none;border-bottom:1px solid rgba(8,123,255,.35)}
+.nav ul.open{display:flex}.nav ul a{display:block;padding:14px 0}.nav>.btn{display:none}
+.layout{grid-template-columns:1fr}.toc{position:static;max-height:none}.doc{padding:28px}}
+@media(max-width:600px){.wrap{padding:0 20px}.fg{grid-template-columns:1fr 1fr}.doc{padding:22px 18px}.doc h2{font-size:21px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+<symbol id="phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+<symbol id="in" viewBox="0 0 24 24"><path d="M4 9v11M4 4.5v.5M9 20V9m0 4c0-2.5 1.8-4 4-4s3.5 1.5 3.5 4v7"/></symbol>
+<symbol id="yt" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10 9 5 3-5 3z"/></symbol>
+<symbol id="x" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20"/></symbol>
+</defs></svg>
+<header><div class="wrap nav">
+<a class="logo" href="index.html" aria-label="Annotrova home"><img src="assets/images/annotrova-header-footer-transparent.png" alt="Annotrova AI Data Operations"></a>
+<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+<ul id="menu"><li><a href="index.html#home">Home</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#contact">Process</a></li><li><a href="index.html#contact">Team</a></li><li><a href="index.html#contact">Resources</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+<a class="btn btn-blue" href="index.html#contact">Get a Quote <svg class="i" width="20" height="20"><use href="#arrow"/></svg></a>
+</div></header>
+<main>
+<div class="phead"><div class="wrap"><a class="back" href="index.html"><svg class="i" width="20" height="20"><use href="#back"/></svg>Back to Home</a>
+<h1>Terms of Service</h1><p>These general terms govern use of the Annotrova website and explain how business inquiries and projects with us work.</p><small>Last updated: <span class="ph">[Insert date]</span></small></div></div>
+<div class="body"><div class="wrap layout">
+<aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#s1">1. Introduction and Acceptance</a></li><li><a href="#s2">2. Website Usage</a></li><li><a href="#s3">3. Our Services</a></li><li><a href="#s4">4. Business Inquiries and Project Discussions</a></li><li><a href="#s5">5. Project Scope, Deliverables, Timelines and Quality</a></li><li><a href="#s6">6. Client Responsibilities</a></li><li><a href="#s7">7. Pricing, Quotations, Invoicing and Payment</a></li><li><a href="#s8">8. Confidentiality and Client Data</a></li><li><a href="#s9">9. Intellectual Property</a></li><li><a href="#s10">10. Third-Party Tools and Service Providers</a></li><li><a href="#s11">11. Limitation of Liability</a></li><li><a href="#s12">12. Disclaimer of Warranties</a></li><li><a href="#s13">13. Suspension or Termination</a></li><li><a href="#s14">14. Governing Law and Jurisdiction</a></li><li><a href="#s15">15. Changes to These Terms</a></li><li><a href="#s16">16. Contact Information</a></li></ul></aside>
+<article class="doc"><div class="note">These are general website documents prepared for Annotrova and should be reviewed by a qualified legal professional in India before publication. Items highlighted like <span class="ph">[this]</span> must be completed by Annotrova.</div><section id="s1"><h2>1. Introduction and Acceptance</h2><p>These Terms of Service (&ldquo;Terms&rdquo;) apply to your use of <a class="l" href="https://annotrova.in">annotrova.in</a> and to general business discussions with Annotrova (&ldquo;Annotrova&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). By using the website, you agree to these Terms. If you do not agree, please do not use the website.</p><p>These are general website terms. Individual client engagements may be covered by separate written agreements, such as a master services agreement or statement of work.</p></section><section id="s2"><h2>2. Website Usage</h2><p>You may use the website for lawful business purposes. You agree not to:</p><ul><li>Interfere with or disrupt the website or its security.</li><li>Attempt unauthorized access to our systems or data.</li><li>Submit false, misleading or unlawful information.</li><li>Copy, scrape or reuse website content except as permitted by law or by us in writing.</li></ul></section><section id="s3"><h2>3. Our Services</h2><p>Annotrova provides AI data operations and data annotation services, including:</p><ul><li>Image Annotation</li><li>Video Annotation</li><li>Text and NLP Annotation</li><li>Audio Annotation</li><li>3D Data Annotation</li><li>Data Quality Assurance</li></ul><p>The website gives general information about these services. The exact services we deliver for you are those agreed in writing for your project.</p></section><section id="s4"><h2>4. Business Inquiries and Project Discussions</h2><p>Submitting an inquiry or discussing a project does not create a binding contract. A client relationship begins only when both parties accept a written quotation, statement of work or agreement. Information you send us in an inquiry is handled under our <a class="l" href="privacy-policy.html">Privacy Policy</a>.</p></section><section id="s5"><h2>5. Project Scope, Deliverables, Timelines and Quality</h2><p>For each project, we will agree in writing the scope, annotation guidelines, deliverable formats, timelines and quality criteria, such as accuracy targets and review methods.</p><p>We work to deliver on schedule and to the agreed quality standard. Timelines depend on timely client inputs, such as data, guidelines and feedback, and may be adjusted by agreement if requirements change. Because annotation involves human judgment, we do not guarantee that deliverables will be error-free, but we will correct non-conforming work in line with the agreed quality process.</p></section><section id="s6"><h2>6. Client Responsibilities</h2><p>Clients agree to:</p><ul><li>Provide accurate, complete and timely project requirements and guidelines.</li><li>Ensure they have the legal right and any required consents or authorizations to share the data they provide, including personal data.</li><li>Not provide unlawful or harmful content, or data that infringes the rights of others, unless it has been specifically discussed and agreed.</li><li>Give timely feedback and acceptance decisions.</li></ul><p>Annotrova is not responsible for delays or issues caused by incomplete, inaccurate or unauthorized client inputs.</p></section><section id="s7"><h2>7. Pricing, Quotations, Invoicing and Payment</h2><p>Project-specific pricing, milestones, deliverables and payment arrangements may be agreed separately in writing. Quotations are valid for the period stated in them.</p><p><strong>Unless otherwise agreed in a separate written agreement, invoices raised by Annotrova for its services are payable within 35 calendar days from the invoice date.</strong></p><p>Any separately signed agreement or accepted statement of work will govern where its terms conflict with these general website terms.</p><p>Taxes, where applicable, will be charged in accordance with applicable law. Late-payment terms, if any, will be set out in the relevant written agreement. Invoicing entity and bank details: <span class="ph">[To be added]</span></p></section><section id="s8"><h2>8. Confidentiality and Client Data</h2><p>We treat non-public client data and project information as confidential and use it only to deliver the agreed services. We limit access to personnel who need it and use reasonable safeguards to protect it. We do not disclose confidential information to third parties except to approved providers who support the services under confidentiality duties, or where law requires.</p><p>Specific confidentiality, data handling and security commitments for a project will be set out in the written agreement for that project. This does not apply to information that is public, was already known to us, or is independently developed.</p></section><section id="s9"><h2>9. Intellectual Property</h2><p>The website, its content, design, and the Annotrova name and logo belong to Annotrova and may not be used without permission.</p><p>Unless the written agreement says otherwise, clients keep ownership of the data they provide. Ownership of final deliverables passes to the client on full payment for them. Annotrova keeps its pre-existing tools, methods, processes and know-how, and may reuse general knowledge that does not include client confidential information.</p></section><section id="s10"><h2>10. Third-Party Tools and Service Providers</h2><p>We may use third-party software, annotation platforms, hosting and form services, such as Formspree for the website contact form, to deliver our services or operate the website. Their terms apply to their services. Where a client requires use of a specific tool or platform, the client is responsible for the licenses and access needed unless agreed otherwise.</p></section><section id="s11"><h2>11. Limitation of Liability</h2><p>To the extent permitted by law, Annotrova will not be liable for indirect, incidental, special or consequential losses, or for loss of profits, revenue, data or business opportunity arising from use of the website or our services.</p><p>Our total liability for any claim relating to services will be limited to the fees paid to us for the specific services giving rise to the claim, unless a written agreement states otherwise. Nothing in these Terms excludes liability that cannot be excluded under applicable law.</p></section><section id="s12"><h2>12. Disclaimer of Warranties</h2><p>The website is provided on an &ldquo;as is&rdquo; and &ldquo;as available&rdquo; basis. We do not warrant that it will be uninterrupted, error-free or free from harmful components. Website content is general information and not professional advice.</p><p>We do not make guarantees about the performance of any AI or machine learning model trained or evaluated using our deliverables, as results depend on many factors outside our control.</p></section><section id="s13"><h2>13. Suspension or Termination</h2><p>We may suspend or end access to the website, or suspend or terminate services, if these Terms or an agreement are breached, if payment is overdue after notice, or if continuing would break the law. Either party may end a project as set out in its written agreement. On termination, the client remains responsible for fees for work performed up to that date, and confidentiality and payment obligations continue.</p></section><section id="s14"><h2>14. Governing Law and Jurisdiction</h2><p>These Terms are governed by the laws of India. Both parties will first try to resolve disputes in good faith. Failing that, the courts at <span class="ph">[city / state, to be confirmed]</span>, India will have jurisdiction, unless a separate written agreement provides otherwise.</p></section><section id="s15"><h2>15. Changes to These Terms</h2><p>We may update these Terms from time to time. The &ldquo;Last updated&rdquo; date shows the latest version. Continued use of the website after changes means you accept them. Changes do not alter terms already agreed in a signed agreement or accepted statement of work.</p></section><section id="s16"><h2>16. Contact Information</h2><p>For questions about these Terms, contact:</p><p>Annotrova<br>Email: <a class="l" href="mailto:info@annotrova.in">info@annotrova.in</a><br>Phone: <a class="l" href="tel:+919696184516">+91 9696184516</a><br>Website: <a class="l" href="https://annotrova.in">annotrova.in</a><br>Location: India<br>Registered business name and address: <span class="ph">[To be added: registered legal name and office address]</span></p></section>
+<div class="bottom"><a class="btn btn-blue" href="index.html"><svg class="i" width="20" height="20"><use href="#back"/></svg>Back to Home</a><a class="btn btn-line" href="privacy-policy.html">Read Privacy Policy</a></div></article>
+</div></div>
+</main>
+<footer><div class="wrap"><div class="fg">
+<div class="brand"><a href="index.html"><img src="assets/images/annotrova-header-footer-transparent.png" alt="Annotrova AI Data Operations"></a><p>Powering AI Through High Quality Human Intelligence.</p></div>
+<div><h3>Services</h3><ul><li><a href="index.html#services">Image Annotation</a></li><li><a href="index.html#services">Video Annotation</a></li><li><a href="index.html#services">Text &amp; NLP Annotation</a></li><li><a href="index.html#services">Audio Annotation</a></li><li><a href="index.html#services">3D Data Annotation</a></li><li><a href="index.html#services">Data Quality Assurance</a></li></ul></div>
+<div><h3>Company</h3><ul><li><a href="index.html#home">About Us</a></li><li><a href="index.html#contact">Our Team</a></li><li><a href="index.html#contact">Careers</a></li><li><a href="index.html#contact">Contact</a></li></ul></div>
+<div><h3>Resources</h3><ul><li><a href="index.html#home">Case Studies</a></li><li><a href="index.html#home">Blog</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-service.html">Terms of Service</a></li></ul></div>
+<div class="ct"><h3>Get in Touch</h3><ul><li><svg class="i"><use href="#mail"/></svg><a href="mailto:info@annotrova.in">info@annotrova.in</a></li><li><svg class="i"><use href="#phone"/></svg><a href="tel:+919696184516">+91 9696184516</a></li><li><svg class="i"><use href="#pin"/></svg>India</li></ul>
+<div class="soc"><a href="#" aria-label="LinkedIn"><svg class="i"><use href="#in"/></svg></a><a href="#" aria-label="YouTube"><svg class="i"><use href="#yt"/></svg></a><a href="#" aria-label="X"><svg class="i"><use href="#x"/></svg></a></div></div>
+</div><div class="fb"><span>&copy; 2026 Annotrova. All rights reserved.</span><nav><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></nav></div></div></footer>
+<script>(function(){var b=document.getElementById('burger'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});})();</script>
+</body>
+</html>

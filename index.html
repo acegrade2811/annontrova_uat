@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Annotrova | AI Data Operations</title>
+<meta name="description" content="Annotrova: end to end data annotation and AI data operations for teams building reliable AI models.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#061329;--navy2:#0A1933;--blue:#087BFF;--cyan:#00C8F0;--ink:#101B32;--mute:#AAB6CA;--bg:#F6F9FE;--line:#DCE6F5}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(6,19,41,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(8,123,255,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:82px}
+.nav .logo img{
+    width:280px;
+    height:auto;
+    max-width:100%;
+    display:block;
+}
+.nav ul{display:flex;gap:40px}
+.nav ul a{color:#fff;font-weight:500;padding:10px 4px;border-bottom:3px solid transparent;transition:color .2s,border-color .2s}
+.nav ul a:hover{color:var(--cyan)}
+.nav ul a.active{border-color:var(--blue)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border-radius:10px;font:600 17px Inter,sans-serif;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 8px 22px rgba(8,123,255,.3)}
+.btn-blue:hover{background:#0a6be0;transform:translateY(-2px)}
+.btn-line{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-line:hover{background:var(--navy);color:#fff}
+.nav .btn{padding:11px 24px;font-size:16px;border-radius:12px}
+.burger{display:none;background:none;border:0;color:#fff;font-size:30px;cursor:pointer}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:46% 54%;min-height:560px;background:linear-gradient(90deg,#fff,var(--bg))}
+.hero-l{padding:48px 24px 48px max(32px,calc((100vw - 1280px)/2 + 32px));align-self:center}
+.tag{display:inline-block;background:#DCEBFF;color:var(--ink);padding:8px 18px;border-radius:30px;font-size:16px;font-weight:500;margin-bottom:28px}
+h1{font-size:clamp(40px,5vw,68px);line-height:1.05;font-weight:800;letter-spacing:-1.5px}
+h1 em{font-style:normal;color:var(--blue)}
+.lead{font-size:clamp(17px,1.5vw,21px);margin:26px 0 32px;max-width:36em;color:#1b2a47}
+.ctas{display:flex;gap:20px;flex-wrap:wrap}
+.trust{display:flex;margin-top:38px;flex-wrap:wrap;row-gap:14px}
+.trust li{display:flex;align-items:center;gap:10px;font-weight:500;padding:0 22px;border-left:1px solid var(--line)}
+.trust li:first-child{padding-left:0;border:0}
+.trust svg{font-size:30px;color:var(--blue)}
+.hero-r{position:relative;background:radial-gradient(ellipse at 60% 100%,#0b4a9f 0,var(--navy2) 45%,var(--navy) 100%);clip-path:polygon(9% 0,100% 0,100% 100%,0 100%);overflow:hidden}
+.hero-r::before{content:"";position:absolute;inset:0;background:var(--blue);clip-path:polygon(0 100%,9% 0,10.5% 0,1.8% 100%);opacity:0}
+.hero-r svg.vis{position:absolute;inset:0;width:100%;height:100%}
+.slash{position:absolute;left:0;top:0;bottom:0;width:100%;pointer-events:none}
+
+/* Services */
+.services{padding:56px 0 72px;background:var(--bg)}
+.sh{display:flex;align-items:center;justify-content:center;gap:24px;margin-bottom:36px}
+.sh h2{font-size:clamp(26px,3vw,34px);font-weight:700;letter-spacing:-.5px;text-align:center}
+.sh span{height:3px;width:64px;background:var(--blue);border-radius:2px}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 14px;text-align:center;box-shadow:0 6px 18px rgba(16,27,50,.06);transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(8,123,255,.18);border-color:var(--blue)}
+.card svg{font-size:42px;color:var(--blue);margin-bottom:8px}
+.card h3{font-size:17px;font-weight:700;margin-bottom:6px;line-height:1.25}
+.card p{font-size:14px;color:#3b4a66}
+
+/* Contact */
+.contact{padding:80px 0;background:#fff}
+.cgrid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
+.contact h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;letter-spacing:-1px;line-height:1.15;margin-bottom:16px}
+.contact .info p{color:#3b4a66;margin-bottom:12px;max-width:30em}
+form{background:var(--navy2);padding:32px;border-radius:16px;display:grid;gap:18px;grid-template-columns:1fr 1fr;color:#fff}
+.f{display:flex;flex-direction:column;gap:6px}
+.f.full{grid-column:1/-1}
+label{font-size:14px;font-weight:600}
+input,select,textarea{font:16px Inter,sans-serif;padding:12px 14px;border-radius:8px;border:1px solid #27406b;background:var(--navy);color:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+textarea{min-height:120px;resize:vertical}
+.err{color:#ff8f8f;font-size:13px;min-height:16px}
+.f.bad input,.f.bad select,.f.bad textarea{border-color:#ff6b6b}
+#status{grid-column:1/-1;font-size:14px;color:var(--mute)}
+
+/* Footer */
+footer{background:var(--navy);color:#fff}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1.3fr;gap:32px;padding:48px 0 36px}
+.fg .brand img{height:56px;margin-bottom:14px}
+.fg .brand p{color:var(--mute);max-width:16em}
+.fg h4{font-size:17px;margin-bottom:14px}
+.fg li{margin-bottom:9px;font-size:15px;color:var(--mute)}
+.fg a:hover{color:var(--cyan)}
+.fg .ct li{display:flex;gap:10px;align-items:center}
+.fg .ct svg{color:#fff;font-size:18px}
+.soc{display:flex;gap:12px;margin-top:18px}
+.soc a{width:38px;height:38px;border:1.5px solid rgba(255,255,255,.7);border-radius:8px;display:grid;place-items:center;font-size:19px;transition:background .2s}
+.soc a:hover{background:var(--blue);border-color:var(--blue)}
+.fb{border-top:1px solid rgba(170,182,202,.3);padding:20px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:14px;color:var(--mute)}
+.fb nav a{padding:0 12px}.fb nav a+a{border-left:1px solid var(--mute)}.fb nav a:last-child{padding-right:0}
+
+/* Responsive */
+@media(max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}.fg{grid-template-columns:1fr 1fr 1fr}.fg .brand{grid-column:1/-1}.nav ul{gap:22px}}
+@media(max-width:900px){
+.burger{display:block}
+.nav ul{position:absolute;top:82px;left:0;right:0;flex-direction:column;gap:0;background:var(--navy);padding:8px 32px 20px;display:none;border-bottom:1px solid rgba(8,123,255,.35)}
+.nav ul.open{display:flex}
+.nav ul a{display:block;padding:14px 0}
+.nav>.btn{display:none}
+.hero{grid-template-columns:1fr}
+.hero-l{padding:40px 24px}
+.hero-r{clip-path:none;min-height:380px}
+.cgrid{grid-template-columns:1fr}}
+@media(max-width:600px){.wrap{padding:0 20px}.grid{grid-template-columns:1fr 1fr}.fg{grid-template-columns:1fr 1fr}.sh span{width:24px}.sh{gap:12px}form{grid-template-columns:1fr;padding:22px}.trust li{padding:0 14px}.btn{padding:13px 24px}}
+@media(max-width:400px){.grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="1.8"/><path d="m21 15-5-5L5 21"/></symbol>
+<symbol id="video" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="m10 8 6 4-6 4z"/></symbol>
+<symbol id="text" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6M9 9h2"/></symbol>
+<symbol id="audio" viewBox="0 0 24 24"><path d="M2 12h3l2-6 3 12 3-16 3 14 2-4h4"/></symbol>
+<symbol id="cube" viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 2.5 4 5.5v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10v-6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17" cy="9" r="2.6"/><path d="M17 14c2.8 0 4.5 1.8 4.5 4.5"/></symbol>
+<symbol id="bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+<symbol id="phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.800 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+<symbol id="in" viewBox="0 0 24 24"><path d="M4 9v11M4 4.5v.5M9 20V9m0 4c0-2.500 1.800-4 4-4s3.500 1.500 3.500 4v7"/></symbol>
+<symbol id="yt" viewBox="0 0 24 24"><rect x="2.500" y="5.500" width="19" height="13" rx="4"/><path d="m10 9 5 3-5 3z"/></symbol>
+<symbol id="x" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20"/></symbol>
+</defs></svg>
+
+<header>
+<div class="wrap nav">
+  <a class="logo" href="#home" aria-label="Annotrova home"><img src="assets/images/annotrova-header-footer-transparent.png" alt="Annotrova AI Data Operations"></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+  <ul id="menu">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Process</a></li>
+    <li><a href="#contact">Team</a></li>
+    <li><a href="#contact">Resources</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="btn btn-blue" href="#contact">Get a Quote <svg class="i" width="20" height="20"><use href="#arrow"/></svg></a>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-l">
+    <span class="tag">AI DATA OPERATIONS PARTNER</span>
+    <h1>High Quality Data<br>for <em>Smarter AI</em></h1>
+    <p class="lead">End to end data annotation and data operations services to help you build, train, and scale reliable AI models.</p>
+    <div class="ctas">
+      <a class="btn btn-blue" href="#contact">Work With Us <svg class="i" width="20" height="20"><use href="#arrow"/></svg></a>
+      <a class="btn btn-line" href="#services">Our Services</a>
+    </div>
+    <ul class="trust">
+      <li><svg class="i"><use href="#shield"/></svg>Quality First</li>
+      <li><svg class="i"><use href="#users"/></svg>Scalable Workforce</li>
+      <li><svg class="i"><use href="#bolt"/></svg>On Time Delivery</li>
+    </ul>
+  </div>
+  <div class="hero-r" role="img" aria-label="Data annotation examples over a digital globe: image boxes, pose tracking, audio waveform, text and 3D labeling">
+    <svg class="vis" viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="gl" cx="50%" cy="0%" r="70%"><stop offset="0" stop-color="#2a8bff" stop-opacity=".9"/><stop offset="1" stop-color="#061329" stop-opacity="0"/></radialGradient>
+        <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#4db3ff"/></pattern>
+        <clipPath id="gc"><ellipse cx="420" cy="640" rx="470" ry="400"/></clipPath>
+      </defs>
+      <ellipse cx="420" cy="640" rx="480" ry="410" fill="#08285a"/>
+      <ellipse cx="420" cy="640" rx="470" ry="400" fill="url(#gl)"/>
+      <g clip-path="url(#gc)" opacity=".75"><path d="M200 300q60-30 120 0t100 40q30 30 80 20t110-20q50 10 60 60v200H200z" fill="url(#dots)"/></g>
+      <ellipse cx="420" cy="640" rx="470" ry="400" fill="none" stroke="#3aa0ff" stroke-width="2" opacity=".7"/>
+      <!-- car card -->
+      <g transform="rotate(4 220 130)"><rect x="150" y="60" width="190" height="115" rx="10" fill="#2b3a52" stroke="#6fb8ff" stroke-width="1.5"/>
+      <path d="M170 140h150v-25q-10-20-35-22h-60q-30 2-45 22z" fill="#9aa8bc"/><circle cx="200" cy="143" r="10" fill="#1b2434"/><circle cx="290" cy="143" r="10" fill="#1b2434"/>
+      <rect x="180" y="88" width="130" height="62" fill="none" stroke="#17b8ff" stroke-width="2.500"/></g>
+      <!-- pose card -->
+      <g transform="rotate(-3 600 130)"><rect x="530" y="40" width="190" height="125" rx="10" fill="#3a4a5e" stroke="#6fb8ff" stroke-width="1.5"/>
+      <g stroke="#2fe0ff" stroke-width="2.500" fill="#2fe0ff" stroke-linecap="round"><circle cx="625" cy="62" r="5"/><path d="M625 70v38M625 80l-22 16M625 80l20 14M625 108l-14 30M625 108l16 28M611 138l-8 14M641 136l12 8" fill="none"/></g></g>
+      <!-- waveform -->
+      <g transform="rotate(-2 140 330)"><rect x="75" y="285" width="145" height="70" rx="10" fill="#0c2347" stroke="#6fb8ff" stroke-width="1.5"/>
+      <path d="M88 320h12l4-18 5 34 5-28 4 20 5-30 5 36 5-26 4 14 5-8h12l4-10 4 20 4-14h10" fill="none" stroke="#38d0ff" stroke-width="2.200"/></g>
+      <!-- text card -->
+      <g transform="rotate(5 380 390)"><rect x="300" y="345" width="160" height="85" rx="10" fill="#0e3470" stroke="#6fb8ff" stroke-width="1.5"/>
+      <g stroke="#3fd8ff" stroke-width="5" stroke-linecap="round"><path d="M322 372h110M322 388h118M322 404h80"/></g></g>
+      <!-- 3D card -->
+      <g transform="rotate(-6 640 380)"><rect x="560" y="310" width="190" height="145" rx="10" fill="#0a2a5a" stroke="#6fb8ff" stroke-width="1.5"/>
+      <g fill="none" stroke="#3aa8ff" stroke-width="2"><path d="M600 350h80v70h-80zM600 350l18-14h80l-18 14M698 336v70l-18 14"/><path d="M618 336v70l-18 14" opacity=".6"/></g><g fill="#6fd0ff" opacity=".7"><circle cx="615" cy="385" r="2"/><circle cx="640" cy="395" r="2"/><circle cx="660" cy="378" r="2"/><circle cx="650" cy="410" r="2"/></g></g>
+    </svg>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sh"><span></span><h2>Our Data Annotation Services</h2><span></span></div>
+    <div class="grid">
+      <article class="card"><svg class="i"><use href="#image"/></svg><h3>Image Annotation</h3><p>Labeling, detection, and segmentation</p></article>
+      <article class="card"><svg class="i"><use href="#video"/></svg><h3>Video Annotation</h3><p>Object tracking and event labeling</p></article>
+      <article class="card"><svg class="i"><use href="#text"/></svg><h3>Text &amp; NLP Annotation</h3><p>Text classification, entity tagging and intent labeling</p></article>
+      <article class="card"><svg class="i"><use href="#audio"/></svg><h3>Audio Annotation</h3><p>Transcription, speaker tagging, and intent</p></article>
+      <article class="card"><svg class="i"><use href="#cube"/></svg><h3>3D Data Annotation</h3><p>Point cloud and object labeling</p></article>
+      <article class="card"><svg class="i"><use href="#shield"/></svg><h3>Data Quality Assurance</h3><p>Multi level QC and annotation audits</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap cgrid">
+    <div class="info">
+      <h2>Tell us about your data project</h2>
+      <p>Share what you are building and the data you need labeled. We will reply to your business email with next steps.</p>
+      <p>info@annotrova.in</p>
+    </div>
+    <!-- Connect later: set action to your Formspree endpoint, e.g. https://formspree.io/f/XXXXXXXX -->
+    <form id="inq"
+      action="https://formspree.io/f/xwllapwd"
+      method="POST"
+      novalidate>
+
+    <input type="hidden" name="subject"
+         value="New Website Inquiry | Annotrova">
+      <div class="f"><label for="name">Full Name</label><input id="name" name="name" autocomplete="name" required><span class="err"></span></div>
+      <div class="f"><label for="company">Company Name</label><input id="company" name="company" autocomplete="organization" required><span class="err"></span></div>
+      <div class="f full"><label for="email">Business Email</label><input id="email" name="email" type="email" autocomplete="email" required><span class="err"></span></div>
+      <div class="f full"><label for="service">Service Required</label>
+        <select id="service" name="service" required><option value="">Select a service</option><option>Image Annotation</option><option>Video Annotation</option><option>Text &amp; NLP Annotation</option><option>Audio Annotation</option><option>3D Data Annotation</option><option>Data Quality Assurance</option></select><span class="err"></span></div>
+      <div class="f full"><label for="details">Project Details</label><textarea id="details" name="details" required></textarea><span class="err"></span></div>
+      <div class="f full"><button class="btn btn-blue" type="submit" style="justify-content:center">Submit Inquiry</button></div>
+      <p id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+  <div class="fg">
+    <div class="brand"><img src="assets/images/annotrova-header-footer-transparent.png" alt="Annotrova AI Data Operations"><p>Powering AI Through High Quality Human Intelligence.</p></div>
+    <div><h4>Services</h4><ul><li><a href="#services">Image Annotation</a></li><li><a href="#services">Video Annotation</a></li><li><a href="#services">Text &amp; NLP Annotation</a></li><li><a href="#services">Audio Annotation</a></li><li><a href="#services">3D Data Annotation</a></li><li><a href="#services">Data Quality Assurance</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#home">About Us</a></li><li><a href="#contact">Our Team</a></li>
+    <!-- <li><a href="#contact">Careers</a></li> -->
+    <li><a href="#contact">Contact</a></li></ul></div>
+    <div><h4>Resources</h4><ul><li><a href="#">Case Studies</a></li>
+    <!-- <li><a href="#">Blog</a></li> -->
+    <li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-service.html">Terms of Service</a></li></ul></div>
+    <div class="ct"><h4>Get in Touch</h4>
+      <ul><li><svg class="i"><use href="#mail"/></svg><a href="mailto:info@annotrova.in">info@annotrova.in</a></li><li><svg class="i"><use href="#phone"/></svg>+91 9696184516</li><li><svg class="i"><use href="#pin"/></svg>India</li></ul>
+      <div class="soc">
+        <a href="https://www.linkedin.com/company/annotrova/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg class="i"><use href="#in"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="fb"><span>&copy; 2026 Annotrova. All rights reserved.</span><nav><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></nav></div>
+</div>
+</footer>
+
+<script>
+(function(){
+var b=document.getElementById('burger'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded',false);}});
+// Active link on scroll
+var links=m.querySelectorAll('a'),secs=['home','services','contact'];
+window.addEventListener('scroll',function(){
+  var cur='home';secs.forEach(function(id){var el=document.getElementById(id);if(el&&el.getBoundingClientRect().top<140)cur=id;});
+  links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+cur&&(cur!=='contact'||a.textContent==='Contact'));});
+},{passive:true});
+// Form validation
+var f=document.getElementById('inq'),st=document.getElementById('status');
+function check(el){
+  var v=el.value.trim(),msg='';
+  if(!v)msg='This field is required.';
+  else if(el.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v))msg='Enter a valid email address.';
+  else if(el.id==='details'&&v.length<20)msg='Please add a few more details (20+ characters).';
+  el.parentNode.classList.toggle('bad',!!msg);
+  el.parentNode.querySelector('.err').textContent=msg;
+  return !msg;
+}
+f.querySelectorAll('input,select,textarea').forEach(function(el){el.addEventListener('blur',function(){check(el);});});
+f.addEventListener('submit',function(e){
+  e.preventDefault();
+  var ok=true;f.querySelectorAll('[required]').forEach(function(el){if(!check(el))ok=false;});
+  if(!ok){st.textContent='Please fix the highlighted fields.';return;}
+  if(f.getAttribute('action')==='#'){st.textContent='Form is valid, but no backend is connected yet. Set the form action to your Formspree endpoint to receive inquiries.';return;}
+  f.submit();
+});
+})();
+</script>
+</body>
+</html>
