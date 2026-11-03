@@ -1,103 +1,927 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy | Annotrova</title>
-<meta name="description" content="How Annotrova collects, uses and protects personal information submitted through its website.">
+<meta name="description" content="Learn how Annotrova collects, uses and protects personal information submitted through its website.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-:root{--navy:#061329;--navy2:#0A1933;--blue:#087BFF;--cyan:#00C8F0;--ink:#101B32;--mute:#AAB6CA;--bg:#F6F9FE;--line:#DCE6F5}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:96px}
-body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.7}
-a{color:inherit;text-decoration:none}ul{list-style:none}:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
-.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
-svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
-header{position:sticky;top:0;z-index:50;background:rgba(6,19,41,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(8,123,255,.35)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:82px}
-.nav .logo img{height:50px;width:auto;display:block}
-.nav ul{display:flex;gap:40px}
-.nav ul a{color:#fff;font-weight:500;padding:10px 4px;border-bottom:3px solid transparent;transition:color .2s}
-.nav ul a:hover{color:var(--cyan)}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:10px;font:600 16px Inter,sans-serif;border:2px solid transparent;transition:transform .2s,background .2s}
-.btn-blue{background:var(--blue);color:#fff;box-shadow:0 8px 22px rgba(8,123,255,.3)}.btn-blue:hover{background:#0a6be0;transform:translateY(-2px)}
-.btn-line{border-color:var(--navy);color:var(--navy)}.btn-line:hover{background:var(--navy);color:#fff}
-.nav .btn{padding:11px 24px;border-radius:12px}
-.burger{display:none;background:none;border:0;color:#fff;font-size:30px;cursor:pointer}
-.phead{background:radial-gradient(ellipse at 80% 100%,#0b4a9f 0,var(--navy2) 50%,var(--navy) 100%);color:#fff;padding:64px 0 56px}
-.phead .back{display:inline-flex;align-items:center;gap:8px;color:var(--cyan);font-weight:600;margin-bottom:24px}
-.phead .back:hover{text-decoration:underline}
-.phead h1{font-size:clamp(34px,5vw,56px);line-height:1.1;font-weight:800;letter-spacing:-1.2px}
-.phead p{max-width:44em;margin-top:18px;font-size:clamp(16px,1.5vw,19px);color:#d6e0f0}
-.phead small{display:block;margin-top:14px;color:var(--mute)}
-.body{background:var(--bg);padding:56px 0 72px}
-.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:48px;align-items:start}
-.toc{position:sticky;top:104px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;font-size:14px;max-height:calc(100vh - 130px);overflow:auto}
-.toc h2{font-size:15px;margin-bottom:10px}.toc li{margin-bottom:6px}.toc a{color:#3b4a66}.toc a:hover{color:var(--blue)}
-.doc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:44px;box-shadow:0 6px 18px rgba(16,27,50,.06);max-width:860px}
-.note{background:#EAF3FF;border-left:4px solid var(--blue);padding:14px 18px;border-radius:8px;margin-bottom:32px;font-size:15px}
-.doc section{margin-bottom:34px}
-.doc h2{font-size:24px;font-weight:700;letter-spacing:-.4px;margin-bottom:12px;line-height:1.3}
-.doc p{margin-bottom:12px;color:#26344f}
-.doc ul{list-style:disc;padding-left:22px;margin-bottom:12px;color:#26344f}.doc li{margin-bottom:6px}
-.doc a.l{color:var(--blue);font-weight:500}.doc a.l:hover{text-decoration:underline}
-.ph{background:#FFF4CC;padding:0 5px;border-radius:4px;font-weight:500}
-.bottom{margin-top:40px;display:flex;gap:16px;flex-wrap:wrap}
-footer{background:var(--navy);color:#fff}
-.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1.3fr;gap:32px;padding:48px 0 36px}
-.fg .brand img{height:56px;margin-bottom:14px}.fg .brand p{color:var(--mute);max-width:16em}
-.fg h3{font-size:17px;margin-bottom:14px}.fg li{margin-bottom:9px;font-size:15px;color:var(--mute)}.fg a:hover{color:var(--cyan)}
-.fg .ct li{display:flex;gap:10px;align-items:center}.fg .ct svg{color:#fff;font-size:18px}
-.soc{display:flex;gap:12px;margin-top:18px}
-.soc a{width:38px;height:38px;border:1.5px solid rgba(255,255,255,.7);border-radius:8px;display:grid;place-items:center;font-size:19px;transition:background .2s}.soc a:hover{background:var(--blue);border-color:var(--blue)}
-.fb{border-top:1px solid rgba(170,182,202,.3);padding:20px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:14px;color:var(--mute)}
-.fb nav a{padding:0 12px}.fb nav a+a{border-left:1px solid var(--mute)}.fb nav a:last-child{padding-right:0}
-@media(max-width:1100px){.fg{grid-template-columns:1fr 1fr 1fr}.fg .brand{grid-column:1/-1}.nav ul{gap:22px}}
-@media(max-width:900px){.burger{display:block}
-.nav ul{position:absolute;top:82px;left:0;right:0;flex-direction:column;gap:0;background:var(--navy);padding:8px 32px 20px;display:none;border-bottom:1px solid rgba(8,123,255,.35)}
-.nav ul.open{display:flex}.nav ul a{display:block;padding:14px 0}.nav>.btn{display:none}
-.layout{grid-template-columns:1fr}.toc{position:static;max-height:none}.doc{padding:28px}}
-@media(max-width:600px){.wrap{padding:0 20px}.fg{grid-template-columns:1fr 1fr}.doc{padding:22px 18px}.doc h2{font-size:21px}}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+:root {
+  --navy: #061329;
+  --navy2: #0A1933;
+  --blue: #087BFF;
+  --cyan: #00C8F0;
+  --ink: #101B32;
+  --mute: #AAB6CA;
+  --bg: #F6F9FE;
+  --line: #DCE6F5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--ink);
+  background: #fff;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+svg.i {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(6,19,41,.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(8,123,255,.35);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 82px;
+}
+
+.nav .logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+.nav ul a {
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 4px;
+  border-bottom: 3px solid transparent;
+  transition: color .2s;
+}
+
+.nav ul a:hover {
+  color: var(--cyan);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font: 600 16px Inter,sans-serif;
+  border: 2px solid transparent;
+  transition: transform .2s,background .2s;
+}
+
+.btn-blue {
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(8,123,255,.3);
+}
+
+.btn-blue:hover {
+  background: #0a6be0;
+  transform: translateY(-2px);
+}
+
+.btn-line {
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+.btn-line:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
+.nav .btn {
+  padding: 11px 24px;
+  border-radius: 12px;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.phead {
+  background: radial-gradient(ellipse at 80% 100%,#0b4a9f 0,var(--navy2) 50%,var(--navy) 100%);
+  color: #fff;
+  padding: 64px 0 56px;
+}
+
+.phead .back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--cyan);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.phead .back:hover {
+  text-decoration: underline;
+}
+
+.phead h1 {
+  font-size: clamp(34px,5vw,56px);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -1.2px;
+}
+
+.phead p {
+  max-width: 44em;
+  margin-top: 18px;
+  font-size: clamp(16px,1.5vw,19px);
+  color: #d6e0f0;
+}
+
+.phead small {
+  display: block;
+  margin-top: 14px;
+  color: var(--mute);
+}
+
+.body {
+  background: var(--bg);
+  padding: 56px 0 72px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0,1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.toc {
+  position: sticky;
+  top: 104px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  font-size: 14px;
+  max-height: calc(100vh - 130px);
+  overflow: auto;
+}
+
+.toc h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.toc li {
+  margin-bottom: 6px;
+}
+
+.toc a {
+  color: #3b4a66;
+}
+
+.toc a:hover {
+  color: var(--blue);
+}
+
+.doc {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 44px;
+  box-shadow: 0 6px 18px rgba(16,27,50,.06);
+  max-width: 860px;
+}
+
+.doc section {
+  margin-bottom: 34px;
+}
+
+.doc h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -.4px;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.doc p {
+  margin-bottom: 12px;
+  color: #26344f;
+}
+
+.doc ul {
+  list-style: disc;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  color: #26344f;
+}
+
+.doc li {
+  margin-bottom: 6px;
+}
+
+.doc a.l {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.doc a.l:hover {
+  text-decoration: underline;
+}
+
+.bottom {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+footer {
+  background: var(--navy);
+  color: #fff;
+}
+
+.fg {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.3fr;
+  gap: 32px;
+  padding: 48px 0 36px;
+}
+
+.fg .brand img {
+  height: 56px;
+  margin-bottom: 14px;
+}
+
+.fg .brand p {
+  color: var(--mute);
+  max-width: 16em;
+}
+
+.fg h3 {
+  font-size: 17px;
+  margin-bottom: 14px;
+}
+
+.fg li {
+  margin-bottom: 9px;
+  font-size: 15px;
+  color: var(--mute);
+}
+
+.fg a:hover {
+  color: var(--cyan);
+}
+
+.fg .ct li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.fg .ct svg {
+  color: #fff;
+  font-size: 18px;
+}
+
+.soc {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.soc a {
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid rgba(255,255,255,.7);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+  transition: background .2s;
+}
+
+.soc a:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+.fb {
+  border-top: 1px solid rgba(170,182,202,.3);
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--mute);
+}
+
+.fb nav a {
+  padding: 0 12px;
+}
+
+.fb nav a+a {
+  border-left: 1px solid var(--mute);
+}
+
+.fb nav a:last-child {
+  padding-right: 0;
+}
+
+@media(max-width:1100px) {
+  .fg {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .fg .brand {
+    grid-column: 1/-1;
+  }
+
+  .nav ul {
+    gap: 22px;
+  }
+}
+
+@media(max-width:900px) {
+  .burger {
+    display: block;
+  }
+
+  .nav ul {
+    position: absolute;
+    top: 82px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--navy);
+    padding: 8px 32px 20px;
+    display: none;
+    border-bottom: 1px solid rgba(8,123,255,.35);
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+
+  .nav ul a {
+    display: block;
+    padding: 14px 0;
+  }
+
+  .nav>.btn {
+    display: none;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .toc {
+    position: static;
+    max-height: none;
+  }
+
+  .doc {
+    padding: 28px;
+  }
+}
+
+@media(max-width:600px) {
+  .wrap {
+    padding: 0 20px;
+  }
+
+  .fg {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .doc {
+    padding: 22px 18px;
+  }
+
+  .doc h2 {
+    font-size: 21px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  * {
+    transition: none!important;
+    scroll-behavior: auto!important;
+  }
+}
 </style>
 </head>
+
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-<symbol id="back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
-<symbol id="mail" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
-<symbol id="phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
-<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
-<symbol id="in" viewBox="0 0 24 24"><path d="M4 9v11M4 4.5v.5M9 20V9m0 4c0-2.5 1.8-4 4-4s3.5 1.5 3.5 4v7"/></symbol>
-<symbol id="yt" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10 9 5 3-5 3z"/></symbol>
-<symbol id="x" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20"/></symbol>
-</defs></svg>
-<header><div class="wrap nav">
-<a class="logo" href="index.html" aria-label="Annotrova home"><img src="assets/images/annotrova-header-footer-transparent.png" alt="Annotrova AI Data Operations"></a>
-<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
-<ul id="menu"><li><a href="index.html#home">Home</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#contact">Process</a></li><li><a href="index.html#contact">Team</a></li><li><a href="index.html#contact">Resources</a></li><li><a href="index.html#contact">Contact</a></li></ul>
-<a class="btn btn-blue" href="index.html#contact">Get a Quote <svg class="i" width="20" height="20"><use href="#arrow"/></svg></a>
-</div></header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+  <symbol id="arrow" viewBox="0 0 24 24">
+    <path d="M5 12h14M13 6l6 6-6 6"/>
+  </symbol>
+
+  <symbol id="back" viewBox="0 0 24 24">
+    <path d="M19 12H5M11 6l-6 6 6 6"/>
+  </symbol>
+
+  <symbol id="mail" viewBox="0 0 24 24">
+    <rect x="2.5" y="5" width="19" height="14" rx="2"/>
+    <path d="m3 7 9 6 9-6"/>
+  </symbol>
+
+  <symbol id="phone" viewBox="0 0 24 24">
+    <path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/>
+  </symbol>
+
+  <symbol id="pin" viewBox="0 0 24 24">
+    <path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/>
+    <circle cx="12" cy="9" r="2.5"/>
+  </symbol>
+
+  <symbol id="in" viewBox="0 0 24 24">
+    <path d="M4 9v11M4 4.5v.5M9 20V9m0 4c0-2.5 1.8-4 4-4s3.5 1.5 3.5 4v7"/>
+  </symbol>
+</defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+
+    <a class="logo" href="index.html" aria-label="Annotrova home">
+      <img src="assets/images/annotrova-header-footer-transparent.png" alt="Annotrova AI Data Operations">
+    </a>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+
+    <ul id="menu">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Process</a></li>
+      <li><a href="index.html#contact">Team</a></li>
+      <li><a href="index.html#contact">Resources</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+
+    <a class="btn btn-blue" href="index.html#contact">
+      Get a Quote
+      <svg class="i" width="20" height="20"><use href="#arrow"/></svg>
+    </a>
+
+  </div>
+</header>
+
 <main>
-<div class="phead"><div class="wrap"><a class="back" href="index.html"><svg class="i" width="20" height="20"><use href="#back"/></svg>Back to Home</a>
-<h1>Privacy Policy</h1><p>This policy explains what personal information Annotrova collects through its website, why we collect it, and the choices you have.</p><small>Last updated: <span class="ph">[Insert date]</span></small></div></div>
-<div class="body"><div class="wrap layout">
-<aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#s1">1. Introduction and Scope</a></li><li><a href="#s2">2. Information Collected Through the Website</a></li><li><a href="#s3">3. Personal Information Submitted Through the Contact Form</a></li><li><a href="#s4">4. How We Use Information</a></li><li><a href="#s5">5. Communication and Business Inquiries</a></li><li><a href="#s6">6. Cookies and Website Analytics</a></li><li><a href="#s7">7. Third-Party Service Providers</a></li><li><a href="#s8">8. Data Storage, Security and Retention</a></li><li><a href="#s9">9. Sharing and Disclosure of Information</a></li><li><a href="#s10">10. Your Rights and Requests</a></li><li><a href="#s11">11. Data Protection and Indian Laws</a></li><li><a href="#s12">12. Updates to This Privacy Policy</a></li><li><a href="#s13">13. Contact for Privacy Inquiries</a></li></ul></aside>
-<article class="doc"><div class="note">These are general website documents prepared for Annotrova and should be reviewed by a qualified legal professional in India before publication. Items highlighted like <span class="ph">[this]</span> must be completed by Annotrova.</div><section id="s1"><h2>1. Introduction and Scope</h2><p>Annotrova (&ldquo;Annotrova&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) provides AI data operations and data annotation services, including image, video, text and NLP, audio and 3D data annotation and data quality assurance. This Privacy Policy explains how we handle personal information collected through our website, <a class="l" href="https://annotrova.in">annotrova.in</a>.</p><p>It applies to visitors to the website and to people who contact us through it. Information handled as part of a client project is governed by the written agreement for that project, in addition to this policy.</p></section><section id="s2"><h2>2. Information Collected Through the Website</h2><p>We keep data collection limited. We collect:</p><ul><li>Information you choose to submit through the contact form (see the next section).</li><li>Information you share when you email or call us, such as your name, contact details and the contents of your message.</li><li>Basic technical information that web servers and browsers commonly exchange, such as IP address, browser type and pages requested, which may be recorded in hosting server logs.</li></ul><p>We do not knowingly collect personal information from children, and the website is not directed at them.</p></section><section id="s3"><h2>3. Personal Information Submitted Through the Contact Form</h2><p>When you submit the inquiry form, we receive:</p><ul><li>Full name</li><li>Company name</li><li>Business email address</li><li>Service required</li><li>Project details you choose to write</li></ul><p>Please do not include confidential datasets, sensitive personal data or login credentials in the form. We will agree a secure way to share project data after we have discussed your requirements.</p></section><section id="s4"><h2>4. How We Use Information</h2><p>We use the information we receive to:</p><ul><li>Respond to inquiries and prepare quotations or proposals.</li><li>Understand your project and recommend suitable services.</li><li>Manage our business relationship and communications with you.</li><li>Operate, secure and improve the website.</li><li>Meet legal, accounting and regulatory obligations.</li></ul><p>We do not sell your personal information.</p></section><section id="s5"><h2>5. Communication and Business Inquiries</h2><p>We will use your contact details to reply to your inquiry and to follow up on the discussion. We will contact you for business purposes related to your request. If you would like us to stop contacting you, write to <a class="l" href="mailto:info@annotrova.in">info@annotrova.in</a> and we will honour your request, except for communications we must send to manage an existing contract or meet legal duties.</p></section><section id="s6"><h2>6. Cookies and Website Analytics</h2><p>At the time of writing, the website does not set advertising or tracking cookies and does not use third-party analytics. Hosting providers may record basic server logs, and your browser may store technical data needed to display the site.</p><p>If we later add analytics or non-essential cookies, we will update this policy and, where required, ask for your consent.</p><p><span class="ph">[Annotrova to confirm this section is accurate for the live website before publishing.]</span></p></section><section id="s7"><h2>7. Third-Party Service Providers</h2><p>We use trusted providers to run the website and handle inquiries:</p><ul><li><strong>Formspree</strong>: when the contact form is connected to Formspree, your form submission is processed by Formspree and forwarded to us. Formspree handles that data under its own privacy policy.</li><li><strong>Google Fonts</strong>: the website loads the Inter typeface from Google Fonts, so your browser may request font files from Google servers.</li><li><strong>Website hosting provider</strong>: <span class="ph">[Name of hosting provider, to be added]</span></li></ul><p>These providers may process data outside India. We choose providers carefully, but we do not control their systems and their policies apply to their processing.</p></section><section id="s8"><h2>8. Data Storage, Security and Retention</h2><p>We use reasonable administrative and technical measures to protect personal information from unauthorized access, loss or misuse. No method of transmission or storage over the internet is completely secure, so we cannot guarantee absolute security.</p><p>We keep inquiry information only for as long as needed to respond, manage the business relationship, and meet legal or accounting requirements. Unless a longer period is required, we aim to delete or anonymize inquiries that do not lead to an engagement within <span class="ph">[retention period, e.g. 24 months]</span>.</p></section><section id="s9"><h2>9. Sharing and Disclosure of Information</h2><p>We share personal information only when needed:</p><ul><li>With service providers who help us operate the website and handle inquiries, as described above.</li><li>With professional advisers such as accountants and lawyers, under confidentiality duties.</li><li>When required by law, court order or a lawful request from a government authority.</li><li>In connection with a business restructuring or sale, with notice where required.</li></ul><p>We do not sell or rent personal information to third parties.</p></section><section id="s10"><h2>10. Your Rights and Requests</h2><p>Subject to applicable law, you may ask us to:</p><ul><li>Tell you what personal information we hold about you.</li><li>Correct inaccurate or incomplete information.</li><li>Delete your information, where we have no legal reason to keep it.</li><li>Withdraw consent you have given, where processing is based on consent.</li></ul><p>Send requests to <a class="l" href="mailto:info@annotrova.in">info@annotrova.in</a>. We may need to verify your identity before acting, and we will respond within a reasonable time and in line with applicable law.</p></section><section id="s11"><h2>11. Data Protection and Indian Laws</h2><p>We handle personal information in line with Indian laws that apply to our business, including the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023, to the extent applicable. Our commitment is to process personal data lawfully, for the purposes described here, and with reasonable safeguards.</p><p>Where we process personal data on behalf of a client during a project, the client is generally responsible for having the right to share that data, and our duties are set out in our written agreement with them.</p></section><section id="s12"><h2>12. Updates to This Privacy Policy</h2><p>We may update this policy from time to time. The &ldquo;Last updated&rdquo; date at the top shows when it last changed. Material changes will be posted on this page. Continued use of the website after an update means you accept the revised policy.</p></section><section id="s13"><h2>13. Contact for Privacy Inquiries</h2><p>For privacy questions, access requests or complaints, contact:</p><p>Annotrova<br>Email: <a class="l" href="mailto:info@annotrova.in">info@annotrova.in</a><br>Phone: <a class="l" href="tel:+919696184516">+91 9696184516</a><br>Website: <a class="l" href="https://annotrova.in">annotrova.in</a><br>Location: India<br>Registered business name and address: <span class="ph">[To be added: registered legal name and office address]</span></p><p>Grievance or privacy contact person: <span class="ph">[Name and designation, to be added]</span></p></section>
-<div class="bottom"><a class="btn btn-blue" href="index.html"><svg class="i" width="20" height="20"><use href="#back"/></svg>Back to Home</a><a class="btn btn-line" href="terms-of-service.html">Read Terms of Service</a></div></article>
-</div></div>
+
+  <div class="phead">
+    <div class="wrap">
+
+      <a class="back" href="index.html">
+        <svg class="i" width="20" height="20"><use href="#back"/></svg>
+        Back to Home
+      </a>
+
+      <h1>Privacy Policy</h1>
+
+      <p>
+        This policy explains what personal information Annotrova collects through its website,
+        why we collect it, and how we protect it.
+      </p>
+
+      <small>Last updated: November 4, 2026</small>
+
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="wrap layout">
+
+      <aside class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+
+        <ul>
+          <li><a href="#s1">1. Introduction and Scope</a></li>
+          <li><a href="#s2">2. Information We Collect</a></li>
+          <li><a href="#s3">3. Contact Form Information</a></li>
+          <li><a href="#s4">4. How We Use Information</a></li>
+          <li><a href="#s5">5. Communication</a></li>
+          <li><a href="#s6">6. Third-Party Service Providers</a></li>
+          <li><a href="#s7">7. Data Security and Retention</a></li>
+          <li><a href="#s8">8. Sharing Information</a></li>
+          <li><a href="#s9">9. Your Privacy Requests</a></li>
+          <li><a href="#s10">10. Data Protection</a></li>
+          <li><a href="#s11">11. Policy Updates</a></li>
+          <li><a href="#s12">12. Contact Information</a></li>
+        </ul>
+      </aside>
+
+      <article class="doc">
+
+        <section id="s1">
+          <h2>1. Introduction and Scope</h2>
+
+          <p>
+            Annotrova provides AI data operations and data annotation services,
+            including image, video, text and NLP, audio and 3D data annotation,
+            and data quality assurance.
+          </p>
+
+          <p>
+            This Privacy Policy explains how we collect, use, store and protect
+            personal information submitted through our website,
+            <a class="l" href="https://annotrova.com">annotrova.com</a>.
+          </p>
+
+          <p>
+            This policy applies to website visitors and individuals who contact
+            us through our website, email or other business communication channels.
+            Information processed as part of a client project is handled according
+            to the applicable project agreement.
+          </p>
+        </section>
+
+        <section id="s2">
+          <h2>2. Information We Collect</h2>
+
+          <p>We may collect the following information:</p>
+
+          <ul>
+            <li>Information you voluntarily submit through our website contact form.</li>
+            <li>Information you share when contacting us by email or telephone.</li>
+            <li>Basic technical information such as IP address, browser type and pages requested, which may be recorded in website server logs.</li>
+          </ul>
+
+          <p>
+            Please avoid submitting confidential datasets, sensitive personal
+            information or login credentials through our public contact form.
+          </p>
+        </section>
+
+        <section id="s3">
+          <h2>3. Contact Form Information</h2>
+
+          <p>When you submit an inquiry through our website, we may receive:</p>
+
+          <ul>
+            <li>Your name</li>
+            <li>Your company name</li>
+            <li>Your business email address</li>
+            <li>The service you are interested in</li>
+            <li>Project details and other information you choose to provide</li>
+          </ul>
+
+          <p>
+            This information helps us understand your requirements and respond
+            to your inquiry.
+          </p>
+        </section>
+
+        <section id="s4">
+          <h2>4. How We Use Information</h2>
+
+          <p>We use collected information to:</p>
+
+          <ul>
+            <li>Respond to inquiries and business requests.</li>
+            <li>Prepare quotations, proposals and service recommendations.</li>
+            <li>Understand project requirements and communicate with prospective clients.</li>
+            <li>Manage existing business relationships.</li>
+            <li>Operate, maintain and improve our website.</li>
+            <li>Meet applicable legal and regulatory obligations.</li>
+          </ul>
+
+          <p>We do not sell personal information.</p>
+        </section>
+
+        <section id="s5">
+          <h2>5. Communication</h2>
+
+          <p>
+            We use the contact details you provide to respond to your inquiry
+            and communicate with you about relevant business matters.
+          </p>
+
+          <p>
+            If you wish to stop receiving non-essential business communications,
+            you can contact us at
+            <a class="l" href="mailto:info@annotrova.com">info@annotrova.com</a>.
+          </p>
+        </section>
+
+        <section id="s6">
+          <h2>6. Third-Party Service Providers</h2>
+
+          <p>
+            We use third-party services to operate our website and process
+            inquiries. These currently include:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Formspree:</strong> Our website contact form uses Formspree
+              to process submitted inquiries and forward them to us.
+              Information submitted through the form may be processed by Formspree
+              under its own privacy policy.
+            </li>
+
+            <li>
+              <strong>Google Fonts:</strong> Our website loads the Inter typeface
+              through Google Fonts. Your browser may request font files from
+              Google's servers.
+            </li>
+
+            <li>
+              <strong>Cloudflare:</strong> Our website is hosted using Cloudflare
+              infrastructure, which may process technical information required
+              to deliver and secure the website.
+            </li>
+          </ul>
+
+          <p>
+            These service providers may process information according to their
+            own privacy policies and applicable terms.
+          </p>
+        </section>
+
+        <section id="s7">
+          <h2>7. Data Security and Retention</h2>
+
+          <p>
+            We take reasonable administrative and technical measures to protect
+            personal information against unauthorized access, loss, misuse
+            or disclosure.
+          </p>
+
+          <p>
+            However, no method of transmitting or storing information over
+            the internet can be guaranteed to be completely secure.
+          </p>
+
+          <p>
+            We retain inquiry information only for as long as reasonably
+            necessary to respond to requests, maintain business relationships,
+            resolve disputes and meet applicable legal or accounting obligations.
+          </p>
+        </section>
+
+        <section id="s8">
+          <h2>8. Sharing Information</h2>
+
+          <p>
+            We may share personal information when reasonably necessary:
+          </p>
+
+          <ul>
+            <li>With service providers that help us operate our website and process inquiries.</li>
+            <li>With professional advisers, including legal and accounting professionals, where necessary.</li>
+            <li>When required by applicable law, court order or a lawful government request.</li>
+            <li>In connection with a business restructuring or transfer, subject to applicable legal requirements.</li>
+          </ul>
+
+          <p>
+            We do not sell or rent personal information to third parties.
+          </p>
+        </section>
+
+        <section id="s9">
+          <h2>9. Your Privacy Requests</h2>
+
+          <p>
+            Subject to applicable law, you may contact us to request access
+            to personal information we hold about you, correction of inaccurate
+            information, or deletion of information where we are not legally
+            required to retain it.
+          </p>
+
+          <p>
+            You may also request withdrawal of consent where applicable.
+          </p>
+
+          <p>
+            Send privacy-related requests to
+            <a class="l" href="mailto:info@annotrova.com">info@annotrova.com</a>.
+            We may need to verify your identity before processing a request.
+          </p>
+        </section>
+
+        <section id="s10">
+          <h2>10. Data Protection</h2>
+
+          <p>
+            We aim to handle personal information in accordance with applicable
+            data protection and privacy laws in India.
+          </p>
+
+          <p>
+            Where personal information is processed on behalf of a client
+            as part of a project, the handling of that information is governed
+            by the applicable project agreement and instructions.
+          </p>
+        </section>
+
+        <section id="s11">
+          <h2>11. Policy Updates</h2>
+
+          <p>
+            We may update this Privacy Policy from time to time to reflect
+            changes in our services, website practices or applicable legal
+            requirements.
+          </p>
+
+          <p>
+            The last updated date displayed at the top of this page indicates
+            when this policy was most recently revised.
+          </p>
+        </section>
+
+        <section id="s12">
+          <h2>12. Contact Information</h2>
+
+          <p>
+            For privacy-related questions, requests or concerns, you can contact:
+          </p>
+
+          <p>
+            <strong>Annotrova</strong><br>
+            Email:
+            <a class="l" href="mailto:info@annotrova.com">info@annotrova.com</a><br>
+            Phone:
+            <a class="l" href="tel:+919696184516">+91 9696184516</a><br>
+            Website:
+            <a class="l" href="https://annotrova.com">annotrova.com</a><br>
+            Location: India
+          </p>
+        </section>
+
+        <div class="bottom">
+
+          <a class="btn btn-blue" href="index.html">
+            <svg class="i" width="20" height="20"><use href="#back"/></svg>
+            Back to Home
+          </a>
+
+          <a class="btn btn-line" href="terms-of-service.html">
+            Read Terms of Service
+          </a>
+
+        </div>
+
+      </article>
+    </div>
+  </div>
+
 </main>
-<footer><div class="wrap"><div class="fg">
-<div class="brand"><a href="index.html"><img src="assets/images/annotrova-header-footer-transparent.png" alt="Annotrova AI Data Operations"></a><p>Powering AI Through High Quality Human Intelligence.</p></div>
-<div><h3>Services</h3><ul><li><a href="index.html#services">Image Annotation</a></li><li><a href="index.html#services">Video Annotation</a></li><li><a href="index.html#services">Text &amp; NLP Annotation</a></li><li><a href="index.html#services">Audio Annotation</a></li><li><a href="index.html#services">3D Data Annotation</a></li><li><a href="index.html#services">Data Quality Assurance</a></li></ul></div>
-<div><h3>Company</h3><ul><li><a href="index.html#home">About Us</a></li><li><a href="index.html#contact">Our Team</a></li><li><a href="index.html#contact">Careers</a></li><li><a href="index.html#contact">Contact</a></li></ul></div>
-<div><h3>Resources</h3><ul><li><a href="index.html#home">Case Studies</a></li><li><a href="index.html#home">Blog</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-service.html">Terms of Service</a></li></ul></div>
-<div class="ct"><h3>Get in Touch</h3><ul><li><svg class="i"><use href="#mail"/></svg><a href="mailto:info@annotrova.in">info@annotrova.in</a></li><li><svg class="i"><use href="#phone"/></svg><a href="tel:+919696184516">+91 9696184516</a></li><li><svg class="i"><use href="#pin"/></svg>India</li></ul>
-<div class="soc"><a href="#" aria-label="LinkedIn"><svg class="i"><use href="#in"/></svg></a><a href="#" aria-label="YouTube"><svg class="i"><use href="#yt"/></svg></a><a href="#" aria-label="X"><svg class="i"><use href="#x"/></svg></a></div></div>
-</div><div class="fb"><span>&copy; 2026 Annotrova. All rights reserved.</span><nav><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></nav></div></div></footer>
-<script>(function(){var b=document.getElementById('burger'),m=document.getElementById('menu');
-b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);});})();</script>
+
+<footer>
+  <div class="wrap">
+
+    <div class="fg">
+
+      <div class="brand">
+        <a href="index.html">
+          <img src="assets/images/annotrova-header-footer-transparent.png" alt="Annotrova AI Data Operations">
+        </a>
+        <p>Powering AI Through High Quality Human Intelligence.</p>
+      </div>
+
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="index.html#services">Image Annotation</a></li>
+          <li><a href="index.html#services">Video Annotation</a></li>
+          <li><a href="index.html#services">Text &amp; NLP Annotation</a></li>
+          <li><a href="index.html#services">Audio Annotation</a></li>
+          <li><a href="index.html#services">3D Data Annotation</a></li>
+          <li><a href="index.html#services">Data Quality Assurance</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="index.html#home">About Us</a></li>
+          <li><a href="index.html#contact">Our Team</a></li>
+          <li><a href="index.html#contact">Careers</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="ct">
+        <h3>Get in Touch</h3>
+
+        <ul>
+          <li>
+            <svg class="i"><use href="#mail"/></svg>
+            <a href="mailto:info@annotrova.com">info@annotrova.com</a>
+          </li>
+
+          <li>
+            <svg class="i"><use href="#phone"/></svg>
+            <a href="tel:+919696184516">+91 9696184516</a>
+          </li>
+
+          <li>
+            <svg class="i"><use href="#pin"/></svg>
+            India
+          </li>
+        </ul>
+
+        <div class="soc">
+          <a href="https://www.linkedin.com/company/annotrova/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg class="i"><use href="#in"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="fb">
+      <span>&copy; 2026 Annotrova. All rights reserved.</span>
+
+      <nav>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+(function() {
+  var b = document.getElementById('burger');
+  var m = document.getElementById('menu');
+
+  b.addEventListener('click', function() {
+    var o = m.classList.toggle('open');
+    b.setAttribute('aria-expanded', o);
+  });
+})();
+</script>
+
 </body>
 </html>
