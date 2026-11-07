@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Annotation Services | ML &amp; Computer Vision | Annotrova</title>
+<meta name="description" content="Professional video annotation services for machine learning and computer vision. Accurate video frame labeling, object tracking, and temporal data quality.">
+<link rel="canonical" href="https://annotrova.com/video-annotation.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#061329">
+
+<!-- Favicon declarations matching site standard -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Open Graph Metadata -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Annotrova">
+<meta property="og:title" content="Video Annotation Services | Annotrova">
+<meta property="og:description" content="Human-led video annotation and computer vision data operations. Structured frame labeling, multi-frame object tracking, and rigorous quality assurance.">
+<meta property="og:url" content="https://annotrova.com/video-annotation.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://annotrova.com/assets/images/annotrova-header-footer-transparent.png">
+
+<!-- Twitter Card Metadata -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Video Annotation Services | Annotrova">
+<meta name="twitter:description" content="Human-led video annotation for computer vision and machine learning teams. Object tracking, frame labeling, and temporal consistency.">
+<meta name="twitter:image" content="https://annotrova.com/assets/images/annotrova-header-footer-transparent.png">
+
+<!-- Google Fonts Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://annotrova.com/#organization",
+      "name": "Annotrova",
+      "url": "https://annotrova.com/",
+      "logo": "https://annotrova.com/assets/images/annotrova-header-footer-transparent.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/annotrova/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@annotrova.com",
+        "telephone": "+91-9696184516",
+        "contactType": "customer service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://annotrova.com/video-annotation.html#service",
+      "name": "Video Annotation Services",
+      "serviceType": "Video Data Annotation",
+      "provider": {
+        "@id": "https://annotrova.com/#organization"
+      },
+      "url": "https://annotrova.com/video-annotation.html",
+      "description": "Structured human-led video annotation services for machine learning and computer vision engineering teams, including frame labeling, multi-object tracking, temporal event tagging, and rigorous quality assurance.",
+      "areaServed": [
+        "United States",
+        "United Kingdom",
+        "European Union",
+        "India"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://annotrova.com/video-annotation.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://annotrova.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Video Annotation Services",
+          "item": "https://annotrova.com/video-annotation.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://annotrova.com/video-annotation.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is video annotation for machine learning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Video annotation is the process of labeling, tracking, and categorizing visual elements across consecutive video frames. It provides ground-truth training data for computer vision models to understand motion, track object trajectories, recognize actions, and interpret temporal changes over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of video annotation are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common video annotation methodologies include 2D bounding boxes across frames, multi-object tracking (MOT) with unique persistent IDs, action and activity recognition, temporal event segmentation, polygonal frame annotation, and holistic scene classification. The specific approach depends on model architectures and project requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between video annotation and image annotation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While image annotation labels static spatial coordinates on standalone images, video annotation incorporates the temporal dimension. Annotators must track identity continuity across frames, maintain bounding box stability, handle transient occlusions, and pinpoint the exact start and end timestamps of dynamic events."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does object tracking across video frames work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Object tracking involves assigning a consistent, unique identifier to a target entity and following its trajectory across successive frames. Annotators verify spatial coordinates from frame to frame, interpolate linear motion, and re-associate the correct persistent ID when objects re-emerge after visual occlusions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Annotrova maintain video annotation quality?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We enforce quality through systematic guideline alignment, pilot batch validation, multi-pass auditing, and automated schema checks. Our review process focuses specifically on persistent ID continuity, bounding box jitter minimization, accurate occlusion tagging, and temporal timestamp precision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What factors affect the cost of video annotation projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cost is influenced by video frame rate (FPS), density of target entities per frame, annotation methodology complexity (e.g., bounding box tracking vs. polygon segmentation), camera stability, occlusion frequency, and custom metadata attribute requirements."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root{--navy:#061329;--navy2:#0A1933;--blue:#087BFF;--cyan:#00C8F0;--mute:#AAB6CA;--glass:rgba(255,255,255,.05);--gl:rgba(255,255,255,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{font-family:Inter,system-ui,sans-serif;color:#fff;background:var(--navy);line-height:1.6;overflow-x:hidden;animation:enter .7s ease both}
+@keyframes enter{from{opacity:0}to{opacity:1}}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px;position:relative}
+svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* Header & Nav */
+header{position:sticky;top:0;z-index:50;background:rgba(6,19,41,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(8,123,255,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:82px}
+.nav .logo img{height:50px;width:auto;display:block}
+.nav ul{display:flex;gap:40px}
+.nav ul a{color:#fff;font-weight:500;padding:10px 4px;border-bottom:3px solid transparent;transition:color .2s}
+.nav ul a:hover,.nav ul a.active{color:var(--cyan)}
+.nav ul a.active{border-bottom-color:var(--blue)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:10px;font:600 17px Inter,sans-serif;border:2px solid transparent;transition:transform .25s,background .25s,box-shadow .25s;cursor:pointer}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 8px 22px rgba(8,123,255,.35)}
+.btn-blue:hover{background:#0a6be0;transform:translateY(-2px);box-shadow:0 12px 30px rgba(8,123,255,.5)}
+.btn-line{border-color:rgba(255,255,255,.7);color:#fff;background:transparent}
+.btn-line:hover{background:#fff;color:var(--navy)}
+.nav .btn{padding:11px 24px;font-size:16px;border-radius:12px}
+.burger{display:none;background:none;border:0;color:#fff;font-size:30px;cursor:pointer}
+
+/* Background elements */
+.bg{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;animation:float 14s ease-in-out infinite alternate}
+.orb.a{width:420px;height:420px;background:#0b5fd6;top:-120px;right:-80px}
+.orb.b{width:320px;height:320px;background:#00a6d0;bottom:-100px;left:-60px;animation-delay:-6s;opacity:.22}
+@keyframes float{to{transform:translate(-40px,50px) scale(1.15)}}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(8,123,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(8,123,255,.08) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at 70% 40%,#000 0,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000 0,transparent 70%)}
+
+/* Reveal animation */
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.js .rl{transform:translateX(-40px)}
+.js .rr{transform:translateX(40px)}
+.word{display:inline-block;overflow:hidden;vertical-align:bottom}
+.word span{display:inline-block}
+.js .word span{transform:translateY(110%);transition:transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .in .word span,.js .word.in span{transform:none}
+
+/* Typography & Layout helpers */
+.label{display:inline-flex;align-items:center;gap:12px;font-size:14px;letter-spacing:.22em;font-weight:600;color:var(--cyan);margin-bottom:20px;text-transform:uppercase}
+.label::before{content:"";width:36px;height:2px;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+h1{font-size:clamp(36px,5.2vw,66px);line-height:1.06;font-weight:800;letter-spacing:-1.8px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(30px,4vw,46px);font-weight:800;letter-spacing:-1px;line-height:1.15}
+h3{font-size:20px;font-weight:700;line-height:1.3;letter-spacing:-.3px}
+p.lead{font-size:clamp(17px,1.5vw,20px);color:#cfdaee;max-width:35em;line-height:1.6}
+.sec-intro{max-width:44em;margin-top:14px;color:var(--mute);font-size:17px}
+.sep{height:2px;margin:50px 0 0;background:linear-gradient(90deg,transparent,var(--blue),var(--cyan),transparent);transform-origin:left;transition:transform 1.4s ease}
+.js .sep{transform:scaleX(0)}
+.js .sep.in{transform:none}
+
+/* Hero Section */
+.hero{position:relative;padding:96px 0 88px;background:radial-gradient(ellipse at 75% 30%,#0b3f86 0,var(--navy2) 45%,var(--navy) 100%);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero .ctas{margin-top:34px;display:flex;gap:16px;flex-wrap:wrap}
+.vis{width:100%;height:auto;max-width:520px;justify-self:center}
+.vis .flow{stroke-dasharray:6 8;animation:dash 1.6s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-28}}
+.vis .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.6s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.35);opacity:.55}}
+.vis .scan{animation:scanTimeline 4.5s ease-in-out infinite alternate}
+@keyframes scanTimeline{from{transform:translateX(0)}to{transform:translateX(180px)}}
+.vis .bob{animation:bob 5s ease-in-out infinite alternate}
+.vis .bob2{animation:bob 6s ease-in-out -2s infinite alternate}
+@keyframes bob{to{transform:translateY(-10px)}}
+
+/* Intro Section */
+.intro{padding:90px 0 50px;background:var(--navy);position:relative}
+.intro-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;margin-top:40px}
+.intro-text p{font-size:17px;color:#cfdaee;margin-bottom:18px}
+.intro-text p:last-child{margin-bottom:0}
+.intro-panel{background:var(--glass);border:1px solid var(--gl);border-radius:20px;padding:34px;backdrop-filter:blur(10px);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.intro-panel h3{font-size:18px;color:var(--cyan);margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.intro-panel ul li{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px}
+.intro-panel ul li:last-child{margin-bottom:0}
+.intro-panel ul li svg{font-size:20px;color:var(--cyan);margin-top:4px}
+.intro-panel strong{color:#fff;display:block}
+.intro-panel span{color:var(--mute);font-size:14.5px}
+
+/* Capabilities Section */
+.methods{padding:80px 0;background:linear-gradient(180deg,var(--navy),#082046 50%,var(--navy));position:relative}
+.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.mcard{background:var(--glass);border:1px solid var(--gl);border-radius:18px;padding:30px;backdrop-filter:blur(8px);transition:transform .3s,border-color .3s,box-shadow .3s;display:flex;flex-direction:column;position:relative}
+.mcard:hover{transform:translateY(-6px);border-color:var(--cyan);box-shadow:0 14px 36px rgba(0,200,240,.15)}
+.mcard-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.mcard-icon{width:46px;height:46px;border-radius:12px;background:rgba(8,123,255,.2);border:1px solid rgba(8,123,255,.4);display:grid;place-items:center;color:var(--cyan);font-size:22px}
+.pill{font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.06em}
+.pill-active{background:rgba(0,200,240,.15);color:var(--cyan);border:1px solid rgba(0,200,240,.3)}
+.pill-eval{background:rgba(170,182,202,.12);color:var(--mute);border:1px solid rgba(170,182,202,.25)}
+.mcard h3{margin-bottom:12px;color:#fff}
+.mcard p{color:var(--mute);font-size:15px;line-height:1.55;margin-bottom:16px;flex:1}
+.mcard-scope{border-top:1px solid rgba(255,255,255,.08);padding-top:14px;font-size:13.5px;color:#8fa5c5}
+.mcard-scope strong{color:var(--cyan);font-weight:600}
+
+/* Workflow Section */
+.process{padding:84px 0;background:var(--navy);position:relative}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:46px}
+.step{background:var(--glass);border:1px solid var(--gl);border-radius:14px;padding:22px 16px;position:relative;display:flex;flex-direction:column}
+.step-num{width:32px;height:32px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:14px;display:grid;place-items:center;margin-bottom:14px}
+.step h3{font-size:16px;margin-bottom:8px;color:#fff}
+.step p{font-size:13.5px;color:var(--mute);line-height:1.45}
+
+/* Applications Section */
+.apps{padding:80px 0;background:linear-gradient(180deg,var(--navy),#06283c 50%,var(--navy));position:relative}
+.apps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.app-card{padding:24px;border-radius:14px;border:1px solid var(--gl);background:rgba(255,255,255,.03);transition:transform .25s,border-color .25s}
+.app-card:hover{transform:translateY(-4px);border-color:var(--cyan);background:rgba(8,123,255,.06)}
+.app-card svg{font-size:26px;color:var(--cyan);margin-bottom:12px}
+.app-card h3{font-size:17px;color:#fff;margin-bottom:8px}
+.app-card p{font-size:14.5px;color:var(--mute);line-height:1.5}
+
+/* QA Section */
+.qa{padding:88px 0;background:linear-gradient(180deg,var(--navy),#08224a 50%,var(--navy));position:relative;overflow:hidden}
+.qa-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:40px}
+.qa-card{background:var(--glass);border:1px solid var(--gl);border-radius:20px;padding:36px;backdrop-filter:blur(10px)}
+.qa-card h4{font-size:14px;letter-spacing:.2em;color:var(--mute);margin-bottom:22px;font-weight:600}
+.tl{position:relative;padding-left:34px}
+.tl::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:rgba(255,255,255,.12)}
+.tl::after{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--blue),var(--cyan));transform-origin:top;transition:transform 1.8s ease .3s}
+.js .tl::after{transform:scaleY(0)}
+.js .qa-card.in .tl::after{transform:none}
+.tl li{position:relative;margin-bottom:22px;padding:2px 0}
+.tl li:last-child{margin-bottom:0}
+.tl li::before{content:"";position:absolute;left:-34px;top:5px;width:20px;height:20px;border-radius:50%;background:var(--navy);border:2px solid var(--cyan);box-shadow:0 0 14px rgba(0,200,240,.6)}
+.tl strong{display:block;font-size:17px;color:#fff}
+.tl span{color:var(--mute);font-size:14.5px}
+.qa-callout{padding:24px;border-radius:14px;background:var(--glass);border:1px solid var(--gl);border-left:4px solid var(--cyan);color:#cfdaee;font-size:16px;line-height:1.6}
+
+/* Why Annotrova Section */
+.why{padding:84px 0;background:var(--navy);position:relative}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.why-card{padding:26px;border-radius:16px;background:var(--glass);border:1px solid var(--gl);transition:transform .25s}
+.why-card:hover{transform:translateY(-4px);border-color:var(--blue)}
+.why-card svg{font-size:28px;color:var(--blue);margin-bottom:14px}
+.why-card h3{font-size:18px;margin-bottom:10px;color:#fff}
+.why-card p{font-size:14.5px;color:var(--mute);line-height:1.55}
+
+/* FAQ Section */
+.faq{padding:88px 0;background:linear-gradient(180deg,var(--navy),#082046 50%,var(--navy));position:relative}
+.faq-list{max-width:880px;margin:42px auto 0;display:flex;flex-direction:column;gap:18px}
+.faq-item{background:var(--glass);border:1px solid var(--gl);border-radius:14px;overflow:hidden;transition:border-color .2s}
+.faq-item[open]{border-color:var(--cyan)}
+.faq-summary{padding:22px 26px;font-size:17px;font-weight:600;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:space-between;list-style:none}
+.faq-summary::-webkit-details-marker{display:none}
+.faq-icon{width:22px;height:22px;transition:transform .3s;color:var(--cyan)}
+.faq-item[open] .faq-icon{transform:rotate(180deg)}
+.faq-content{padding:0 26px 24px;color:#cfdaee;font-size:15px;line-height:1.6}
+
+/* CTA Section */
+.cta{position:relative;padding:110px 0;text-align:center;background:radial-gradient(ellipse at 50% 100%,#0b4a9f 0,var(--navy2) 55%,var(--navy) 100%);overflow:hidden}
+.cta h2{font-size:clamp(30px,4.6vw,56px);font-weight:800;letter-spacing:-1.2px;line-height:1.1;max-width:18em;margin:0 auto 22px}
+.cta p{color:#cfdaee;max-width:38em;margin:0 auto 34px;font-size:clamp(17px,1.5vw,20px)}
+.cta .btn{animation:glow 3s ease-in-out infinite}
+@keyframes glow{50%{box-shadow:0 0 0 10px rgba(8,123,255,.15),0 12px 36px rgba(8,123,255,.55)}}
+
+/* Footer */
+footer{background:var(--navy);border-top:1px solid rgba(8,123,255,.25)}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1.3fr;gap:32px;padding:48px 0 36px}
+.fg .brand img{height:56px;margin-bottom:14px}
+.fg .brand p{color:var(--mute);max-width:16em}
+.fg h3{font-size:17px;margin-bottom:14px}
+.fg li{margin-bottom:9px;font-size:15px;color:var(--mute)}
+.fg a:hover{color:var(--cyan)}
+.fg .ct li{display:flex;gap:10px;align-items:center}
+.fg .ct svg{color:#fff;font-size:18px}
+.soc{display:flex;gap:12px;margin-top:18px}
+.soc a{width:38px;height:38px;border:1.5px solid rgba(255,255,255,.7);border-radius:8px;display:grid;place-items:center;font-size:19px;transition:background .2s}
+.soc a:hover{background:var(--blue);border-color:var(--blue)}
+.fb{border-top:1px solid rgba(170,182,202,.3);padding:20px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:14px;color:var(--mute)}
+.fb nav a{padding:0 12px}
+.fb nav a+a{border-left:1px solid var(--mute)}
+.fb nav a:last-child{padding-right:0}
+
+/* Responsive adjustments */
+@media(max-width:1100px){
+  .fg{grid-template-columns:1fr 1fr 1fr}
+  .fg .brand{grid-column:1/-1}
+  .nav ul{gap:22px}
+  .method-grid,.apps-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:900px){
+  .burger{display:block}
+  .nav ul{position:absolute;top:82px;left:0;right:0;flex-direction:column;gap:0;background:var(--navy);padding:8px 32px 20px;display:none;border-bottom:1px solid rgba(8,123,255,.35)}
+  .nav ul.open{display:flex}
+  .nav ul a{display:block;padding:14px 0}
+  .nav>.btn{display:none}
+  .hero{padding:64px 0}
+  .hero .wrap{grid-template-columns:1fr}
+  .vis{max-width:440px}
+  .intro-grid,.qa-grid{grid-template-columns:1fr;gap:36px}
+  .steps{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .wrap{padding:0 20px}
+  .fg{grid-template-columns:1fr 1fr}
+  .method-grid,.apps-grid,.why-grid,.steps{grid-template-columns:1fr}
+  .btn{padding:13px 24px}
+  .intro-panel,.qa-card{padding:24px 20px}
+  .faq-summary{padding:18px 20px;font-size:16px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv,.js .word span{opacity:1!important;transform:none!important}
+  .js .sep,.js .tl::after{transform:none!important}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+
+<!-- Global SVG Symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="video" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="m10 8 6 4-6 4z"/></symbol>
+<symbol id="track" viewBox="0 0 24 24"><path d="M4 4h4v4H4zM16 16h4v4h-4z"/><circle cx="12" cy="12" r="2.5"/><path d="m7 7 3.5 3.5M13.5 13.5 17 17" stroke-dasharray="2 2"/></symbol>
+<symbol id="film" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20M2 16h20M6 4v4M10 4v4M14 4v4M18 4v4M6 16v4M10 16v4M14 16v4M18 16v4"/></symbol>
+<symbol id="activity" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 2.500 4 5.500v6c0 5 3.400 8.400 8 10 4.600-1.600 8-5 8-10v-6z"/><path d="m8.500 12 2.500 2.500 4.500-5"/></symbol>
+<symbol id="box" viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/></symbol>
+<symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.500"/><path d="m8 12 3 3 5-6"/></symbol>
+<symbol id="cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="17" cy="9" r="2.6"/><path d="M17 14c2.8 0 4.5 1.8 4.5 4.5"/></symbol>
+<symbol id="chevron-down" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="2.500" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+<symbol id="phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.500 1.500a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-6.200 7-12a7 7 0 0 0-14 0c0 5.800 7 12 7 12z"/><circle cx="12" cy="9" r="2.500"/></symbol>
+<symbol id="in" viewBox="0 0 24 24"><path d="M4 9v11M4 4.500v.5M9 20V9m0 4c0-2.500 1.800-4 4-4s3.500 1.500 3.500 4v7"/></symbol>
+</defs></svg>
+
+<!-- Header -->
+<header>
+<div class="wrap nav">
+  <a class="logo" href="index.html" aria-label="Annotrova home">
+    <img src="assets/images/annotrova-header-footer-transparent.png" alt="Annotrova AI Data Operations">
+  </a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+  <ul id="menu">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#services" class="active">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="case-studies.html">Case Studies</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a class="btn btn-blue" href="index.html#contact">Get a Quote <svg class="i" width="20" height="20"><use href="#arrow"/></svg></a>
+</div>
+</header>
+
+<main>
+<!-- SECTION A: HERO -->
+<section class="hero">
+  <div class="bg"><div class="grid"></div><div class="orb a"></div><div class="orb b"></div></div>
+  <div class="wrap">
+    <div>
+      <p class="label rv">VIDEO ANNOTATION SERVICES</p>
+      <h1 id="h1"><span class="word"><span style="--d:.1s">Video</span></span> <span class="word"><span style="--d:.18s">Annotation</span></span> <span class="word"><span style="--d:.26s">Services</span></span><br><span class="word"><span style="--d:.34s">for</span></span> <span class="word"><span style="--d:.42s">Machine</span></span> <span class="word"><span style="--d:.5s">Learning</span></span> <span class="word"><span style="--d:.58s">&amp;</span></span> <em><span class="word"><span style="--d:.66s">Computer</span></span> <span class="word"><span style="--d:.74s">Vision</span></span></em></h1>
+      <p class="lead rv" style="--d:.82s">Prepare continuous temporal datasets with precision-controlled video frame labeling, object tracking across frames, and activity classification built for production computer vision pipelines.</p>
+      <div class="ctas rv" style="--d:.9s">
+        <a class="btn btn-blue" href="index.html#contact">Discuss Your Project <svg class="i" width="20" height="20"><use href="#arrow"/></svg></a>
+        <a class="btn btn-line" href="index.html#services">Explore Our Services</a>
+      </div>
+    </div>
+
+    <!-- Original SVG Illustration: Temporal Video Frame Annotation & Tracking -->
+    <svg class="vis rv" style="--d:.4s" viewBox="0 0 520 440" role="img" aria-label="Vector illustration representing video frame annotation, temporal multi-object tracking, and trajectory analysis">
+      <defs>
+        <linearGradient id="vBlueCyan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#087BFF"/><stop offset="1" stop-color="#00C8F0"/></linearGradient>
+        <linearGradient id="trackGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#087BFF" stop-opacity=".2"/><stop offset="1" stop-color="#00C8F0" stop-opacity=".7"/></linearGradient>
+      </defs>
+      <!-- Background data nodes -->
+      <g fill="#4db3ff" opacity=".8">
+        <circle class="pulse" cx="40" cy="90" r="4"/>
+        <circle class="pulse" cx="45" cy="210" r="3" style="animation-delay:-.8s"/>
+        <circle class="pulse" cx="30" cy="320" r="4" style="animation-delay:-1.6s"/>
+      </g>
+      <g class="flow" fill="none" stroke="#2a8bff" stroke-width="1.5">
+        <path d="M40 90Q110 110 130 140"/>
+        <path d="M45 210Q95 200 130 200"/>
+        <path d="M30 320Q95 280 130 240"/>
+        <path d="M380 200H440"/>
+      </g>
+
+      <!-- Video Canvas Stack -->
+      <g class="bob">
+        <!-- Frame 1 (Background offset frame) -->
+        <rect x="170" y="60" width="190" height="120" rx="10" fill="#071b38" stroke="#1b4a8a" stroke-width="1.5" opacity=".5"/>
+        <!-- Frame 2 (Mid offset frame) -->
+        <rect x="150" y="75" width="200" height="130" rx="12" fill="#092248" stroke="#2761af" stroke-width="1.5" opacity=".75"/>
+        <!-- Frame 3 (Primary Active Canvas) -->
+        <rect x="130" y="90" width="240" height="165" rx="14" fill="#0c2a58" stroke="url(#vBlueCyan)" stroke-width="2"/>
+        
+        <!-- Viewport Scene Elements -->
+        <rect x="144" y="104" width="212" height="106" rx="8" fill="#081832"/>
+        <!-- Motion Trajectory Vector Line -->
+        <path d="M165 180 Q215 135 315 145" fill="none" stroke="url(#trackGrad)" stroke-width="2.5" stroke-dasharray="4 3"/>
+        <!-- Historical Keyframe Waypoints -->
+        <circle cx="165" cy="180" r="3" fill="#087BFF" opacity=".6"/>
+        <circle cx="215" cy="150" r="3.5" fill="#00C8F0" opacity=".8"/>
+        <circle cx="265" cy="140" r="4" fill="#00C8F0"/>
+        
+        <!-- Active Bounding Box with Persistent Track ID -->
+        <rect x="270" y="120" width="68" height="52" rx="4" fill="rgba(8,123,255,.18)" stroke="#00C8F0" stroke-width="2"/>
+        <rect x="270" y="108" width="54" height="12" rx="3" fill="#087BFF"/>
+        <text x="274" y="117" fill="#fff" font-size="8" font-family="Inter,sans-serif" font-weight="700">TRACK_04</text>
+        <!-- Bounding Box Corner Reticles -->
+        <circle cx="270" cy="120" r="2.5" fill="#00C8F0"/>
+        <circle cx="338" cy="120" r="2.5" fill="#00C8F0"/>
+        <circle cx="270" cy="172" r="2.5" fill="#00C8F0"/>
+        <circle cx="338" cy="172" r="2.5" fill="#00C8F0"/>
+
+        <!-- Secondary Object (Pedestrian / Crossing) -->
+        <rect x="180" y="132" width="26" height="48" rx="3" fill="none" stroke="#2fe0ff" stroke-width="1.5" stroke-dasharray="3 2"/>
+        <rect x="180" y="122" width="44" height="10" rx="2" fill="#0a3568"/>
+        <text x="183" y="130" fill="#3fd8ff" font-size="7" font-family="Inter,sans-serif" font-weight="600">ID_09:OBJ</text>
+
+        <!-- Video Playhead / Filmstrip Indicator inside canvas -->
+        <g transform="translate(144, 220)">
+          <rect x="0" y="0" width="212" height="24" rx="4" fill="#06162e"/>
+          <!-- Film notch marks -->
+          <rect x="6" y="4" width="10" height="16" rx="2" fill="#133667"/>
+          <rect x="22" y="4" width="10" height="16" rx="2" fill="#133667"/>
+          <rect x="38" y="4" width="10" height="16" rx="2" fill="#133667"/>
+          <rect x="54" y="4" width="10" height="16" rx="2" fill="#087BFF"/>
+          <rect x="70" y="4" width="10" height="16" rx="2" fill="#00C8F0"/>
+          <rect x="86" y="4" width="10" height="16" rx="2" fill="#133667"/>
+          <rect x="102" y="4" width="10" height="16" rx="2" fill="#133667"/>
+          <rect x="118" y="4" width="10" height="16" rx="2" fill="#133667"/>
+          <!-- Timecode stamp -->
+          <text x="145" y="16" fill="#AAB6CA" font-size="8.5" font-family="Inter,sans-serif">00:04:18:12</text>
+        </g>
+      </g>
+
+      <!-- Temporal Inspection Card -->
+      <g class="bob2">
+        <rect x="385" y="135" width="105" height="140" rx="14" fill="#0a2f4f" stroke="#00C8F0" stroke-width="2"/>
+        <circle cx="437" cy="180" r="22" fill="none" stroke="#00C8F0" stroke-width="2.5"/>
+        <!-- Action recognition icon (clock / sequence) -->
+        <path d="M437 168v13l9 5" fill="none" stroke="#00C8F0" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="437" y="222" fill="#cfdaee" font-size="10.5" font-family="Inter,sans-serif" font-weight="600" text-anchor="middle">TEMPORAL QA</text>
+        <path d="M405 242h65" stroke="#3fd8ff" stroke-width="3" stroke-linecap="round"/>
+      </g>
+
+      <!-- Video Timeline Bar -->
+      <g opacity=".85">
+        <rect x="130" y="320" width="360" height="20" rx="6" fill="#0a244a" stroke="#1b4a8a" stroke-width="1"/>
+        <!-- Timeline ticks -->
+        <line x1="170" y1="324" x2="170" y2="336" stroke="#2761af" stroke-width="1.5"/>
+        <line x1="210" y1="324" x2="210" y2="336" stroke="#2761af" stroke-width="1.5"/>
+        <line x1="250" y1="324" x2="250" y2="336" stroke="#2761af" stroke-width="1.5"/>
+        <line x1="290" y1="324" x2="290" y2="336" stroke="#2761af" stroke-width="1.5"/>
+        <line x1="330" y1="324" x2="330" y2="336" stroke="#2761af" stroke-width="1.5"/>
+        <line x1="370" y1="324" x2="370" y2="336" stroke="#2761af" stroke-width="1.5"/>
+        <line x1="410" y1="324" x2="410" y2="336" stroke="#2761af" stroke-width="1.5"/>
+        <line x1="450" y1="324" x2="450" y2="336" stroke="#2761af" stroke-width="1.5"/>
+        <!-- Progress scrubber head -->
+        <rect class="scan" x="180" y="316" width="6" height="28" rx="2" fill="#00C8F0" opacity=".95"/>
+      </g>
+      <g fill="#AAB6CA" font-family="Inter,sans-serif" font-size="11" letter-spacing="2">
+        <text x="130" y="370">FRAME EXTRACTION</text>
+        <text x="290" y="370">OBJECT TRACKING</text>
+        <text x="445" y="370">EVENT QA</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- SECTION B: INTRODUCTION -->
+<section class="intro" id="overview">
+  <div class="wrap">
+    <p class="label rv">TEMPORAL GROUND TRUTH</p>
+    <h2 class="rv" style="--d:.1s">Why Video Data Requires Specialized Temporal Labeling</h2>
+    <div class="intro-grid">
+      <div class="intro-text rv rl" style="--d:.2s">
+        <p>Video is not simply a sequence of isolated pictures. While individual frames convey spatial geometry, video encodes temporal context: speed, direction of motion, causal relationships, interaction between entities, and real-time state changes over continuous time horizons.</p>
+        <p>Training models for object tracking, autonomous systems, workplace security, and sports analytics requires preserving that temporal context. When annotations jitter across frames or lose track of an object’s persistent ID through partial occlusions, the downstream machine learning algorithm fails to build reliable representations of velocity and trajectory.</p>
+        <p>Annotrova delivers structured video data labeling through human-in-the-loop workflows. Our annotators trace entity continuity, identify action boundaries, and perform rigorous multi-frame quality audits to produce dependable training and validation sets.</p>
+      </div>
+      <div class="intro-panel rv rr" style="--d:.3s">
+        <h3>Critical Video Annotation Requirements</h3>
+        <ul>
+          <li>
+            <svg class="i"><use href="#check"/></svg>
+            <div>
+              <strong>Persistent Identifier Consistency</strong>
+              <span>Ensuring tracked entities retain identical identity tags across their entire trajectory, even when obstructed or temporarily out of camera frame.</span>
+            </div>
+          </li>
+          <li>
+            <svg class="i"><use href="#check"/></svg>
+            <div>
+              <strong>Bounding Box Stability &amp; Interpolation</strong>
+              <span>Minimizing spatial jitter across consecutive frames to maintain smooth trajectory curves for velocity and acceleration calculations.</span>
+            </div>
+          </li>
+          <li>
+            <svg class="i"><use href="#check"/></svg>
+            <div>
+              <strong>Accurate Timestamp Boundary Tagging</strong>
+              <span>Pinpointing exact start and end frame indices for dynamic actions, transition states, and localized environmental events.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="sep"></div>
+  </div>
+</section>
+
+<!-- SECTION C: VIDEO ANNOTATION CAPABILITIES -->
+<section class="methods" id="capabilities">
+  <div class="wrap">
+    <p class="label rv">LABELING METHODOLOGIES</p>
+    <h2 class="rv" style="--d:.1s">Video Annotation Capabilities</h2>
+    <p class="sec-intro rv" style="--d:.15s">We align our labeling workflows with established computer vision methodologies. Specific annotation tooling, delivery formats, and operational scopes are confirmed during technical project assessment.</p>
+
+    <div class="method-grid">
+      <!-- Capability 1: Frame Annotation -->
+      <article class="mcard rv" style="--d:.2s">
+        <div class="mcard-head">
+          <div class="mcard-icon"><svg class="i"><use href="#film"/></svg></div>
+          <span class="pill pill-active">Supported Methodology</span>
+        </div>
+        <h3>Video Frame Annotation</h3>
+        <p>Labeling sampled or sequential video frames at specified frame rates (FPS). Involves drawing coordinate annotations on individual frames while accounting for motion blur and perspective distortion.</p>
+        <div class="mcard-scope"><strong>Common Use:</strong> Frame-by-frame object classification, scene condition updates, safety hazard detection.</div>
+      </article>
+
+      <!-- Capability 2: Object Detection and Localization -->
+      <article class="mcard rv" style="--d:.25s">
+        <div class="mcard-head">
+          <div class="mcard-icon"><svg class="i"><use href="#box"/></svg></div>
+          <span class="pill pill-active">Supported Methodology</span>
+        </div>
+        <h3>Object Detection &amp; Localization</h3>
+        <p>Locating, bounding, and classifying key entities within video streams. Tight boundary boxes or polygon boundaries isolate target items across dynamic background changes and lighting variations.</p>
+        <div class="mcard-scope"><strong>Common Use:</strong> Vehicle and pedestrian detection, equipment localization, inventory tracking.</div>
+      </article>
+
+      <!-- Capability 3: Object Tracking Across Frames -->
+      <article class="mcard rv" style="--d:.3s">
+        <div class="mcard-head">
+          <div class="mcard-icon"><svg class="i"><use href="#track"/></svg></div>
+          <span class="pill pill-active">Supported Methodology</span>
+        </div>
+        <h3>Object Tracking Across Frames</h3>
+        <p>Assigning persistent tracking IDs to entities and following their spatial trajectory across consecutive frames. Tracks are maintained through directional shifts and re-associated after temporary occlusions.</p>
+        <div class="mcard-scope"><strong>Common Use:</strong> Multi-object tracking (MOT), trajectory prediction, speed estimation, dwell-time analytics.</div>
+      </article>
+
+      <!-- Capability 4: Activity and Event Annotation -->
+      <article class="mcard rv" style="--d:.35s">
+        <div class="mcard-head">
+          <div class="mcard-icon"><svg class="i"><use href="#activity"/></svg></div>
+          <span class="pill pill-eval">Capability Confirmation</span>
+        </div>
+        <h3>Activity &amp; Action Annotation</h3>
+        <p>Categorizing specific human or mechanical actions taking place within video segments. Identifies complex behavioral transitions, ergonomics, procedural steps, and posture shifts over time.</p>
+        <div class="mcard-scope"><strong>Common Use:</strong> Worker safety compliance, sports motion analysis, human-robot interaction datasets.</div>
+      </article>
+
+      <!-- Capability 5: Temporal Event Labeling -->
+      <article class="mcard rv" style="--d:.4s">
+        <div class="mcard-head">
+          <div class="mcard-icon"><svg class="i"><use href="#clock"/></svg></div>
+          <span class="pill pill-eval">Capability Confirmation</span>
+        </div>
+        <h3>Temporal Event Labeling</h3>
+        <p>Timestamping start and end frames for discrete events within continuous video recordings. Annotators establish temporal boundaries for state transitions, anomalies, or procedural phases.</p>
+        <div class="mcard-scope"><strong>Common Use:</strong> Industrial assembly cycle timing, security incident detection, broadcast highlight tagging.</div>
+      </article>
+
+      <!-- Capability 6: Scene and Environment Classification -->
+      <article class="mcard rv" style="--d:.45s">
+        <div class="mcard-head">
+          <div class="mcard-icon"><svg class="i"><use href="#eye"/></svg></div>
+          <span class="pill pill-active">Supported Methodology</span>
+        </div>
+        <h3>Scene &amp; Environment Classification</h3>
+        <p>Assigning global contextual attributes to continuous video clips or segmented intervals. Captures environmental variables such as weather, lighting conditions, road surfaces, and scene density.</p>
+        <div class="mcard-scope"><strong>Common Use:</strong> Contextual filtering, multi-condition ML benchmarking, visual data organization.</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION D: VIDEO ANNOTATION WORKFLOW -->
+<section class="process" id="process">
+  <div class="wrap">
+    <p class="label rv">OPERATIONAL WORKFLOW</p>
+    <h2 class="rv" style="--d:.1s">Our Video Annotation Workflow</h2>
+    <p class="sec-intro rv" style="--d:.15s">A structured operational methodology is essential to manage the volume and complexity of video data. We guide every project through six disciplined delivery stages.</p>
+
+    <div class="steps">
+      <div class="step rv" style="--d:.1s">
+        <div class="step-num">01</div>
+        <h3>Technical Assessment</h3>
+        <p>Reviewing video resolution, duration, FPS, target classes, tracking criteria, and downstream model objectives.</p>
+      </div>
+      <div class="step rv" style="--d:.15s">
+        <div class="step-num">02</div>
+        <h3>Guideline Alignment</h3>
+        <p>Establishing clear rules for bounding tolerances, persistent ID retention, occlusion tagging, and edge-case handling.</p>
+      </div>
+      <div class="step rv" style="--d:.2s">
+        <div class="step-num">03</div>
+        <h3>Annotation Execution</h3>
+        <p>Human-led labeling and multi-frame tracking carried out according to the agreed taxonomy and sample rate.</p>
+      </div>
+      <div class="step rv" style="--d:.25s">
+        <div class="step-num">04</div>
+        <h3>Quality Review</h3>
+        <p>Secondary inspection focusing on ID swaps, bounding jitter, missed transitions, and temporal timestamp accuracy.</p>
+      </div>
+      <div class="step rv" style="--d:.3s">
+        <div class="step-num">05</div>
+        <h3>Correction &amp; Validation</h3>
+        <p>Systematic discrepancy remediation, client feedback iteration, and automated schema syntax verification.</p>
+      </div>
+      <div class="step rv" style="--d:.35s">
+        <div class="step-num">06</div>
+        <h3>Structured Delivery</h3>
+        <p>Exporting validated datasets in client-specified formats (JSON, XML, MOT, COCO-Video) with comprehensive batch summaries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION E: APPLICATIONS AND USE CASES -->
+<section class="apps" id="use-cases">
+  <div class="bg"><div class="orb b" style="opacity:.2;left:auto;right:-60px"></div></div>
+  <div class="wrap">
+    <p class="label rv">APPLICATION DOMAINS</p>
+    <h2 class="rv" style="--d:.1s">Potential Computer Vision Applications</h2>
+    <p class="sec-intro rv" style="--d:.15s">Structured video annotation empowers computer vision teams across varied industrial and commercial domains. These represent areas our workflows are designed to support.</p>
+
+    <div class="apps-grid">
+      <div class="app-card rv" style="--d:.2s">
+        <svg class="i"><use href="#box"/></svg>
+        <h3>Autonomous Mobility &amp; Transportation</h3>
+        <p>Tracking road participants, lane changes, vehicle trajectories, and pedestrian movements across variable lighting and traffic density.</p>
+      </div>
+      <div class="app-card rv" style="--d:.25s">
+        <svg class="i"><use href="#shield"/></svg>
+        <h3>Surveillance &amp; Security Analytics</h3>
+        <p>Perimeter boundary monitoring, unauthorized access event tagging, crowd flow estimation, and loitering identification.</p>
+      </div>
+      <div class="app-card rv" style="--d:.3s">
+        <svg class="i"><use href="#eye"/></svg>
+        <h3>Retail Video Analytics</h3>
+        <p>Shopper path tracking, dwell-time analysis, foot-traffic pattern mapping, and checkout interaction monitoring for store operations.</p>
+      </div>
+      <div class="app-card rv" style="--d:.35s">
+        <svg class="i"><use href="#cpu"/></svg>
+        <h3>Industrial &amp; Workplace Safety</h3>
+        <p>Monitoring forklift operational corridors, assembly cycle compliance, PPE equipment usage, and restricted-zone violations.</p>
+      </div>
+      <div class="app-card rv" style="--d:.4s">
+        <svg class="i"><use href="#activity"/></svg>
+        <h3>Human Activity Recognition</h3>
+        <p>Dataset preparation for gesture control, ergonomic workflow reviews, patient fall detection, and behavioral understanding models.</p>
+      </div>
+      <div class="app-card rv" style="--d:.45s">
+        <svg class="i"><use href="#film"/></svg>
+        <h3>Sports Analytics &amp; Robotics Research</h3>
+        <p>Player and ball tracking, athletic posture analysis, autonomous mobile robot path planning, and continuous scene interpretation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION F: QUALITY ASSURANCE -->
+<section class="qa" id="quality">
+  <div class="bg"><div class="orb a" style="opacity:.2"></div></div>
+  <div class="wrap">
+    <div class="qa-grid">
+      <div>
+        <p class="label rv">PROCESS INTEGRITY</p>
+        <h2 class="rv" style="--d:.1s">Quality Assurance Across Every Temporal Sequence</h2>
+        <p class="sec-intro rv" style="--d:.15s">Video labeling introduces multi-dimensional failure modes that do not exist in static imagery. A single ID switch or misaligned bounding box can corrupt an entire tracking training sequence. Annotrova builds quality checks directly into the operational cycle.</p>
+        <div class="qa-callout rv" style="--d:.25s;margin-top:30px">
+          We maintain transparent quality protocols, resolving guideline ambiguities early through sample milestone runs rather than letting assumptions accumulate across long video files.
+        </div>
+      </div>
+      <div class="qa-card rv rr" style="--d:.2s">
+        <h4>OUR MULTI-LEVEL QUALITY AUDITING</h4>
+        <ul class="tl">
+          <li>
+            <strong>Guideline &amp; Boundary Calibration</strong>
+            <span>Reviewing bounding snugness, interpolation limits, and occlusion handling rules against project specifications.</span>
+          </li>
+          <li>
+            <strong>Temporal Continuity Audits</strong>
+            <span>Verifying that tracked entities maintain continuous ID tags across dynamic occlusions and perspective changes.</span>
+          </li>
+          <li>
+            <strong>Jitter &amp; Drift Elimination</strong>
+            <span>Inspecting bounding coordinates to eliminate erratic box shifts between keyframes and ensure smooth trajectories.</span>
+          </li>
+          <li>
+            <strong>Timestamp Precision Verification</strong>
+            <span>Validating that event and action triggers are tagged at exact transition frames rather than approximate durations.</span>
+          </li>
+          <li>
+            <strong>Schema &amp; Deliverable Structuring</strong>
+            <span>Automated validation of output coordinates, frame-index metadata, and format syntax prior to batch release.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION G: WHY ANNOTROVA -->
+<section class="why" id="why-annotrova">
+  <div class="wrap">
+    <p class="label rv">THE ANNOTROVA PARTNERSHIP</p>
+    <h2 class="rv" style="--d:.1s">Why Work With Annotrova for Video Data Operations</h2>
+    <p class="sec-intro rv" style="--d:.15s">We combine human intelligence, structured project management, and a technical understanding of computer vision to deliver reliable video training datasets.</p>
+
+    <div class="why-grid">
+      <div class="why-card rv" style="--d:.2s">
+        <svg class="i"><use href="#users"/></svg>
+        <h3>Human-in-the-Loop Focus</h3>
+        <p>Dedicated annotators review complex motion sequences, camera glare, and object occlusions that automated tools frequently misinterpret.</p>
+      </div>
+      <div class="why-card rv" style="--d:.25s">
+        <svg class="i"><use href="#shield"/></svg>
+        <h3>Structured Project Governance</h3>
+        <p>Clear delivery milestones, regular operational touchpoints, and transparent tracking keep your data preparation on schedule.</p>
+      </div>
+      <div class="why-card rv" style="--d:.3s">
+        <svg class="i"><use href="#cpu"/></svg>
+        <h3>Technical Understanding</h3>
+        <p>We understand computer vision requirements, coordinate systems, frame interpolation logic, and model validation formats.</p>
+      </div>
+      <div class="why-card rv" style="--d:.35s">
+        <svg class="i"><use href="#track"/></svg>
+        <h3>Rigorous Quality Auditing</h3>
+        <p>Secondary inspection cycles target temporal jitter, identity switches, and missing boundary tags before data enters your pipeline.</p>
+      </div>
+      <div class="why-card rv" style="--d:.4s">
+        <svg class="i"><use href="#eye"/></svg>
+        <h3>Transparent Project Scoping</h3>
+        <p>We evaluate your actual video characteristics, duration, and labeling depth to recommend realistic workflows and achievable milestones.</p>
+      </div>
+      <div class="why-card rv" style="--d:.45s">
+        <svg class="i"><use href="#check"/></svg>
+        <h3>Adaptive Collaboration</h3>
+        <p>Whether you require pilot validation batches to refine edge-case guidelines or scheduled operations for recurring data feeds, we align to your needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION H: FREQUENTLY ASKED QUESTIONS -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div style="text-align:center">
+      <p class="label rv" style="justify-content:center">FAQ</p>
+      <h2 class="rv" style="--d:.1s">Frequently Asked Questions</h2>
+      <p class="sec-intro rv" style="--d:.15s;margin:12px auto 0">Clear answers regarding our video annotation services, tracking methodologies, and operational workflow.</p>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item rv" style="--d:.2s">
+        <summary class="faq-summary">
+          <span>What is video annotation for machine learning?</span>
+          <svg class="i faq-icon"><use href="#chevron-down"/></svg>
+        </summary>
+        <div class="faq-content">
+          Video annotation is the process of labeling, tracking, and categorizing visual elements across consecutive video frames. It provides ground-truth training data for computer vision models to understand motion, track object trajectories, recognize actions, and interpret temporal changes over time.
+        </div>
+      </details>
+
+      <details class="faq-item rv" style="--d:.25s">
+        <summary class="faq-summary">
+          <span>What types of video annotation are available?</span>
+          <svg class="i faq-icon"><use href="#chevron-down"/></svg>
+        </summary>
+        <div class="faq-content">
+          Common video annotation methodologies include 2D bounding boxes across frames, multi-object tracking (MOT) with unique persistent IDs, action and activity recognition, temporal event segmentation, polygonal frame annotation, and holistic scene classification. The specific approach depends on model architectures and project requirements.
+        </div>
+      </details>
+
+      <details class="faq-item rv" style="--d:.3s">
+        <summary class="faq-summary">
+          <span>What is the difference between video annotation and image annotation?</span>
+          <svg class="i faq-icon"><use href="#chevron-down"/></svg>
+        </summary>
+        <div class="faq-content">
+          While image annotation labels static spatial coordinates on standalone images, video annotation incorporates the temporal dimension. Annotators must track identity continuity across frames, maintain bounding box stability, handle transient occlusions, and pinpoint the exact start and end timestamps of dynamic events.
+        </div>
+      </details>
+
+      <details class="faq-item rv" style="--d:.35s">
+        <summary class="faq-summary">
+          <span>How does object tracking across video frames work?</span>
+          <svg class="i faq-icon"><use href="#chevron-down"/></svg>
+        </summary>
+        <div class="faq-content">
+          Object tracking involves assigning a consistent, unique identifier to a target entity and following its trajectory across successive frames. Annotators verify spatial coordinates from frame to frame, interpolate linear motion, and re-associate the correct persistent ID when objects re-emerge after visual occlusions.
+        </div>
+      </details>
+
+      <details class="faq-item rv" style="--d:.4s">
+        <summary class="faq-summary">
+          <span>How does Annotrova maintain video annotation quality?</span>
+          <svg class="i faq-icon"><use href="#chevron-down"/></svg>
+        </summary>
+        <div class="faq-content">
+          We enforce quality through systematic guideline alignment, pilot batch validation, multi-pass auditing, and automated schema checks. Our review process focuses specifically on persistent ID continuity, bounding box jitter minimization, accurate occlusion tagging, and temporal timestamp precision.
+        </div>
+      </details>
+
+      <details class="faq-item rv" style="--d:.45s">
+        <summary class="faq-summary">
+          <span>What factors affect the cost of video annotation projects?</span>
+          <svg class="i faq-icon"><use href="#chevron-down"/></svg>
+        </summary>
+        <div class="faq-content">
+          Cost is influenced by video frame rate (FPS), density of target entities per frame, annotation methodology complexity (e.g., bounding box tracking vs. polygon segmentation), camera stability, occlusion frequency, and custom metadata attribute requirements.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION I: FINAL CTA -->
+<section class="cta">
+  <div class="bg"><div class="grid"></div><div class="orb a" style="right:auto;left:10%;opacity:.25"></div></div>
+  <div class="wrap">
+    <h2 class="rv">Ready to Structure Your Video Training Datasets?</h2>
+    <p class="rv" style="--d:.1s">Speak with our AI data operations specialists to discuss your video dataset specifications, review sample footage, and design a dependable annotation pipeline.</p>
+    <a class="btn btn-blue rv" style="--d:.2s" href="index.html#contact">Discuss Your Video Annotation Project <svg class="i" width="20" height="20"><use href="#arrow"/></svg></a>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+<div class="wrap">
+  <div class="fg">
+    <div class="brand">
+      <a href="index.html">
+        <img src="assets/images/annotrova-header-footer-transparent.png" alt="Annotrova AI Data Operations">
+      </a>
+      <p>Powering AI Through High Quality Human Intelligence.</p>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <ul>
+        <li><a href="image-annotation.html">Image Annotation</a></li>
+        <li><a href="video-annotation.html" style="color:var(--cyan)">Video Annotation</a></li>
+        <li><a href="index.html#services">Text &amp; NLP Annotation</a></li>
+        <li><a href="index.html#services">Audio Annotation</a></li>
+        <li><a href="index.html#services">3D Data Annotation</a></li>
+        <li><a href="index.html#services">Data Quality Assurance</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <ul>
+        <li><a href="index.html#home">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+      </ul>
+    </div>
+    <div class="ct">
+      <h3>Get in Touch</h3>
+      <ul>
+        <li><svg class="i"><use href="#mail"/></svg><a href="mailto:info@annotrova.com">info@annotrova.com</a></li>
+        <li><svg class="i"><use href="#phone"/></svg><a href="tel:+919696184516">+91 9696184516</a></li>
+        <li><svg class="i"><use href="#pin"/></svg>India</li>
+      </ul>
+      <div class="soc">
+        <a href="https://www.linkedin.com/company/annotrova/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg class="i"><use href="#in"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="fb">
+    <span>&copy; 2026 Annotrova. All rights reserved.</span>
+    <nav>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </nav>
+  </div>
+</div>
+</footer>
+
+<script>
+(function(){
+  // Mobile burger menu toggle
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  if(b&&m){
+    b.addEventListener('click',function(){
+      var o=m.classList.toggle('open');
+      b.setAttribute('aria-expanded',o);
+    });
+    m.addEventListener('click',function(e){
+      if(e.target.tagName==='A'){
+        m.classList.remove('open');
+        b.setAttribute('aria-expanded',false);
+      }
+    });
+  }
+
+  // Scroll reveal animation observer
+  var els=document.querySelectorAll('.rv,.sep,.word');
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in');});
+    return;
+  }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(x){
+      if(x.isIntersecting){
+        x.target.classList.add('in');
+        io.unobserve(x.target);
+      }
+    });
+  },{threshold:.12,rootMargin:'0px 0px -4% 0px'});
+
+  els.forEach(function(e){io.observe(e);});
+
+  // Hero headline words reveal animation on load
+  document.querySelectorAll('#h1 .word').forEach(function(w){
+    requestAnimationFrame(function(){w.classList.add('in');});
+  });
+})();
+</script>
+</body>
+</html>

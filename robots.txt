@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://annotrova.com/sitemap.xml

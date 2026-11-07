@@ -17,6 +17,36 @@
   </url>
 
   <url>
+    <loc>https://annotrova.com/image-annotation.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://annotrova.com/video-annotation.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://annotrova.com/text-nlp-annotation.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://annotrova.com/audio-annotation.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://annotrova.com/3d-data-annotation.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://annotrova.com/data-quality-assurance.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://annotrova.com/privacy-policy.html</loc>
     <priority>0.4</priority>
   </url>
