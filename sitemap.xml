@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://annotrova.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://annotrova.com/team.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://annotrova.com/case-studies.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://annotrova.com/privacy-policy.html</loc>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://annotrova.com/terms-of-service.html</loc>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
